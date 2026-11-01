@@ -63,7 +63,7 @@ cp .env.example .env.local
 
 ```bash
 npm install
-npm run db:push               # create tables from src/db/schema.ts
+npm run db:migrate            # create tables from drizzle/*.sql
 npm run db:seed               # areas + checks, and regulations from data/regulations.json
 ```
 
@@ -105,8 +105,11 @@ npm run dev
 
 Open http://localhost:3000 and sign in with `ADMIN_PASSWORD`.
 
-Other scripts: `npm run build`, `npm start`, `npm run typecheck`, `npm run db:generate`
-(SQL migrations into `drizzle/`), `npm run db:studio`.
+Other scripts: `npm run build`, `npm start`, `npm run typecheck`, `npm run db:studio`.
+
+Schema changes: edit `src/db/schema.ts`, run `npm run db:generate` to write a new SQL
+migration into `drizzle/`, commit it, then `npm run db:migrate`. (`npm run db:push` syncs a
+local dev database directly, without a migration file.)
 
 ## Layout
 
@@ -132,6 +135,30 @@ IBM Plex Mono for codes, numbers and `§` section labels. No gradients, shadows 
 No 21 CFR Part 11 controls, no electronic signatures, no file upload. Approvals record
 preparation status only.
 
+## Deploy (Railway)
+
+The app and its Postgres run in one Railway project. `railway.json` sets the build, start and
+pre-deploy steps; every deploy runs `npm run db:migrate` before the new version starts.
+
+One-time setup:
+
+1. In Railway, create a project from the GitHub repo and add a **PostgreSQL** database.
+2. On the app service, set variables:
+   - `DATABASE_URL` = `${{Postgres.DATABASE_URL}}` (a reference to the database service)
+   - `ADMIN_PASSWORD` = a strong password
+   - `SESSION_SECRET` = 32+ random characters (`openssl rand -hex 32`)
+3. Under Networking, generate a Railway domain.
+4. Load the starter data once, from your machine, against the database's public URL:
+
+   ```bash
+   DATABASE_URL="<Postgres DATABASE_PUBLIC_URL>" npm run db:seed
+   ```
+
+   Re-run `npm run db:load-regulations` the same way whenever `data/regulations.json` changes.
+
+Pushes to `main` redeploy automatically.
+
 ## Domain
 
-The production domain will be `pvcompass.info`. DNS is not configured yet.
+The production domain will be `pvcompass.info`. DNS is not configured yet; until then the site
+is served on its Railway domain.
