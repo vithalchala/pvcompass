@@ -111,6 +111,20 @@ Schema changes: edit `src/db/schema.ts`, run `npm run db:generate` to write a ne
 migration into `drizzle/`, commit it, then `npm run db:migrate`. (`npm run db:push` syncs a
 local dev database directly, without a migration file.)
 
+## Tests
+
+```bash
+npm test
+```
+
+Loader tests always run. Search tests run only when `TEST_DATABASE_URL` is set; they create
+tables and replace all regulations in that database, so use a separate, empty one:
+
+```bash
+createdb pvcompass_test
+TEST_DATABASE_URL=postgres://pvcompass:pvcompass@localhost:5432/pvcompass_test npm test
+```
+
 ## Layout
 
 ```

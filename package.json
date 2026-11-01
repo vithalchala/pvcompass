@@ -13,7 +13,8 @@
     "db:studio": "drizzle-kit studio",
     "db:seed": "tsx src/db/seed.ts",
     "db:load-regulations": "tsx src/db/load-regulations.ts",
-    "db:migrate": "node scripts/migrate.mjs"
+    "db:migrate": "node scripts/migrate.mjs",
+    "test": "tsx --conditions=react-server --test test/*.test.ts"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.4",
