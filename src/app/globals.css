@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #141518;
+  --color-muted: #6b6e76;
+  --color-faint: #9a9ca3;
+  --color-rule: #e4e4e2;
+  --color-paper: #ffffff;
+  --color-wash: #f7f7f6;
+  --color-alert: #8a2a1b;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Small uppercase mono label used for meta lines, nav and section labels. */
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+*:focus-visible {
+  outline: 1px solid var(--color-ink);
+  outline-offset: 2px;
+}
