@@ -1,64 +1,53 @@
-import { existsSync } from "node:fs";
 import { loadEnvConfig } from "@next/env";
+import { sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { readRegulationsFile, REGULATIONS_FILE, syncRegulations } from "./regulations-file";
+import { hashPassword } from "../lib/password";
+import { readLibraryFiles, syncLibrary, validateLibrary } from "./library-file";
+import { readRegulationsFile, syncRegulations } from "./regulations-file";
 import * as schema from "./schema";
-import { AREAS } from "./seed-data";
+import { ROLES } from "./schema";
 
 loadEnvConfig(process.cwd());
 
+// Usage: npm run db:seed
+// Loads regulations, the frozen reference model and the check library, and
+// creates the first admin user from ADMIN_EMAIL / ADMIN_PASSWORD if there are no users.
 async function main() {
-  const regs = existsSync(REGULATIONS_FILE) ? await readRegulationsFile() : null;
-  if (!regs) console.warn(`No ${REGULATIONS_FILE}; seeding areas without regulations.`);
-  const known = new Set(regs?.map((r) => r.id));
+  const regs = await readRegulationsFile();
+  const { model, library } = await readLibraryFiles();
+  const errors = validateLibrary(model, library, new Set(regs.map((r) => r.id)));
+  if (errors.length) {
+    throw new Error(`Check library has ${errors.length} problem(s):\n  - ${errors.join("\n  - ")}`);
+  }
 
-  const client = postgres(process.env.DATABASE_URL!, { max: 1 });
+  const client = postgres(process.env.DATABASE_URL!, { max: 1, onnotice: () => {} });
   const db = drizzle(client, { schema });
-  let linked = 0;
-  let skipped = 0;
 
-  await db.transaction(async (tx) => {
-    // Full reset of the area tree: the seed is its source of truth.
-    await tx.delete(schema.checkRegulations);
-    await tx.delete(schema.checks);
-    await tx.delete(schema.subAreas);
-    await tx.delete(schema.areas);
-    if (regs) await syncRegulations(tx, regs);
-
-    for (const [ai, area] of AREAS.entries()) {
-      await tx.insert(schema.areas).values({
-        code: area.code,
-        number: ai + 1,
-        name: area.name,
-        description: area.description,
-      });
-      for (const [si, sub] of area.subAreas.entries()) {
-        const [row] = await tx
-          .insert(schema.subAreas)
-          .values({ areaCode: area.code, number: si + 1, name: sub.name, description: sub.description })
-          .returning({ id: schema.subAreas.id });
-        for (const [ci, c] of sub.checks.entries()) {
-          const [chk] = await tx
-            .insert(schema.checks)
-            .values({ subAreaId: row.id, number: ci + 1, question: c.question, guidance: c.guidance })
-            .returning({ id: schema.checks.id });
-          const regIds = c.regs.filter((id) => known.has(id));
-          skipped += c.regs.length - regIds.length;
-          linked += regIds.length;
-          if (regIds.length) {
-            await tx
-              .insert(schema.checkRegulations)
-              .values(regIds.map((regulationId) => ({ checkId: chk.id, regulationId })));
-          }
-        }
-      }
-    }
+  const report = await db.transaction(async (tx) => {
+    await syncRegulations(tx, regs);
+    return syncLibrary(tx, model, library);
   });
 
+  const [{ count }] = await db.select({ count: sql<number>`count(*)::int` }).from(schema.users);
+  let createdAdmin = "";
+  if (count === 0) {
+    const email = process.env.ADMIN_EMAIL;
+    const password = process.env.ADMIN_PASSWORD;
+    if (!email || !password) throw new Error("No users yet: set ADMIN_EMAIL and ADMIN_PASSWORD to create the first one.");
+    await db.insert(schema.users).values({
+      email: email.toLowerCase(),
+      name: process.env.ADMIN_NAME || "Admin",
+      roles: [...ROLES],
+      passwordHash: await hashPassword(password),
+    });
+    createdAdmin = ` Created admin user ${email}.`;
+  }
+
   console.log(
-    `Seeded ${AREAS.length} areas, ${regs?.length ?? 0} regulations, ${linked} check links` +
-      (skipped ? ` (${skipped} links skipped: regulation id not in file).` : "."),
+    `Loaded ${regs.length} regulations, ${report.areas} areas, ${report.subAreas} sub-areas. ` +
+      `Checks: ${report.added} added, ${report.revised} revised (back to draft), ${report.unchanged} unchanged.` +
+      createdAdmin,
   );
   await client.end();
 }

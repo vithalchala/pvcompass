@@ -7,7 +7,7 @@ export async function middleware(req: NextRequest) {
   if (sealed) {
     try {
       const data = await unsealData<SessionData>(sealed, { password: await getSessionSecret() });
-      if (data.isAdmin) return NextResponse.next();
+      if (data.userId) return NextResponse.next();
     } catch {
       // Fall through to login on a tampered or stale cookie.
     }

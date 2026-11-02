@@ -1,0 +1,3573 @@
+{
+  "drafted_by": "LLM draft (Claude), pending area-by-area approval",
+  "checks": [
+    {
+      "check_id": "QMS-01",
+      "subarea_code": "QMS.1",
+      "statement": "A current PSMF exists, is located as notified and reflects the actual PV system.",
+      "applicability": {
+        "markets": [
+          "EU",
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF",
+        "PSMF logbook",
+        "PSMF location notification"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-02",
+      "subarea_code": "QMS.1",
+      "statement": "Every PSMF change is recorded in the logbook with date, author and reason, and annexes are kept current with the main body.",
+      "applicability": {
+        "requires": [
+          "psmf"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF logbook",
+        "PSMF annexes",
+        "PSMF change history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        },
+        {
+          "citation": "Commission Implementing Regulation (EU) 520/2012",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-03",
+      "subarea_code": "QMS.1",
+      "statement": "The PSMF can be provided to an authority within 7 days of request, and a documented process defines who prepares and releases it.",
+      "applicability": {
+        "requires": [
+          "psmf"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF request SOP",
+        "Mock PSMF request record"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-04",
+      "subarea_code": "QMS.1",
+      "statement": "The PSMF number and location held in the Article 57 database match the actual PSMF for every EU-authorised product.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "Article 57 extract",
+        "PSMF location notification",
+        "Product list annex"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Regulation (EC) 726/2004 Article 57",
+          "jurisdiction": "EU",
+          "regulation_id": "regulation-eu-726-2004-centralized-procedure-and-ema-powers"
+        },
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-05",
+      "subarea_code": "QMS.1",
+      "statement": "PSMF annexes list all contracted PV service providers, SDEA partners and computerised systems in use, matching the current contract register.",
+      "applicability": {
+        "requires": [
+          "psmf"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF annex of contracts",
+        "Contract register",
+        "System inventory"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        },
+        {
+          "citation": "Commission Implementing Regulation (EU) 520/2012",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-06",
+      "subarea_code": "QMS.2",
+      "statement": "An EU QPPV and deputy are appointed, reside and operate in the EU/EEA, and are available 24/7 with a documented back-up arrangement.",
+      "applicability": {
+        "requires": [
+          "eu_qppv"
+        ]
+      },
+      "inspector_evidence": [
+        "QPPV appointment letter",
+        "QPPV and deputy CVs",
+        "Out-of-hours rota"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "Regulation (EU) 1235/2010 / Directive 2010/84/EU",
+          "jurisdiction": "EU",
+          "regulation_id": "regulation-eu-no-1235-2010-directive-2010-84-eu-eu-pv-legislation"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-07",
+      "subarea_code": "QMS.2",
+      "statement": "The QPPV has documented authority over the PV system and receives routine metrics on compliance, signals, audits and CAPAs.",
+      "applicability": {
+        "requires": [
+          "eu_qppv"
+        ]
+      },
+      "inspector_evidence": [
+        "QPPV job description",
+        "QPPV oversight reports",
+        "Delegation records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "Commission Implementing Regulation (EU) 520/2012",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-08",
+      "subarea_code": "QMS.2",
+      "statement": "A UK QPPV (or UK national contact person where required) is appointed and notified to the MHRA, with current contact details.",
+      "applicability": {
+        "requires": [
+          "uk_qppv"
+        ]
+      },
+      "inspector_evidence": [
+        "UK QPPV notification",
+        "MHRA submission record"
+      ],
+      "crosswalks": [
+        {
+          "citation": "UK GPvP / HMR 2012",
+          "jurisdiction": "UK"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-09",
+      "subarea_code": "QMS.2",
+      "statement": "QPPV delegations to deputies and functions are written, signed and kept current, with no gaps during absences.",
+      "applicability": {
+        "requires": [
+          "eu_qppv"
+        ]
+      },
+      "inspector_evidence": [
+        "Delegation log",
+        "Absence cover records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-10",
+      "subarea_code": "QMS.2",
+      "statement": "Local PV contacts are appointed in every market where one is required, trained, and overseen by the global PV function.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Local PV contact list",
+        "Local contact training records",
+        "Local oversight reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-11",
+      "subarea_code": "QMS.3",
+      "statement": "Every PV process, including intake, case processing, submission, signals, aggregate reports and RMPs, is covered by an approved, version-controlled SOP.",
+      "applicability": null,
+      "inspector_evidence": [
+        "SOP index",
+        "Process-to-SOP map"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "21 CFR 314.80(b)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-12",
+      "subarea_code": "QMS.3",
+      "statement": "SOPs are reviewed at their scheduled interval and superseded versions are withdrawn from use and archived.",
+      "applicability": null,
+      "inspector_evidence": [
+        "SOP review schedule",
+        "Document control records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-13",
+      "subarea_code": "QMS.3",
+      "statement": "Local procedures and work instructions are consistent with global SOPs, and deviations from them are documented.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Local SOP list",
+        "Global-local gap assessment"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-14",
+      "subarea_code": "QMS.4",
+      "statement": "Each PV role has a defined training curriculum, and training on new or revised SOPs is completed before staff perform the task.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Training matrix",
+        "Training records",
+        "Curricula by role"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-15",
+      "subarea_code": "QMS.4",
+      "statement": "Staff outside PV who may receive safety information, including sales, medical and customer service, complete AE awareness training at hire and annually.",
+      "applicability": null,
+      "inspector_evidence": [
+        "AE awareness training records",
+        "Completion metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-16",
+      "subarea_code": "QMS.4",
+      "statement": "Training effectiveness is assessed and overdue training is escalated and tracked to completion.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Overdue training report",
+        "Training assessment results"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-17",
+      "subarea_code": "QMS.5",
+      "statement": "A cross-functional safety governance body meets at a defined frequency and records benefit-risk decisions with rationale.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Safety committee charter",
+        "Meeting minutes",
+        "Decision log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-18",
+      "subarea_code": "QMS.5",
+      "statement": "Senior management reviews PV system performance at least annually, including compliance KPIs, audit findings and resourcing.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Management review minutes",
+        "PV performance report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "QMS-19",
+      "subarea_code": "QMS.5",
+      "statement": "There is a documented escalation route for urgent safety issues to the QPPV and senior management, with timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Escalation SOP",
+        "Escalation records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-01",
+      "subarea_code": "ICSR.1",
+      "statement": "All AE intake channels (phone, email, web, social media, MI, PSPs, partners) are inventoried and each is mapped to a documented route into the safety database.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Intake channel inventory",
+        "Intake SOP"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-02",
+      "subarea_code": "ICSR.1",
+      "statement": "Day zero is defined as first receipt of the minimum criteria by anyone in the company or its contractors, and is captured correctly in the safety database.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Day-zero SOP",
+        "Sample case audit trail"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "21 CFR 314.80",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-03",
+      "subarea_code": "ICSR.4",
+      "statement": "Serious unexpected cases are submitted within 15 calendar days, measured by source.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Timeliness metrics by source",
+        "Late-case log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(c)(1)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-04",
+      "subarea_code": "ICSR.1",
+      "statement": "Company-sponsored websites and social media accounts are screened for AEs at a defined frequency, and screening is documented.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Digital media screening log",
+        "Social media SOP"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-05",
+      "subarea_code": "ICSR.1",
+      "statement": "Solicited reports from organised data collection schemes are identified as solicited and processed per the applicable reporting rules.",
+      "applicability": {
+        "requires": [
+          "patient_programmes"
+        ]
+      },
+      "inspector_evidence": [
+        "Programme list",
+        "Solicited case listing"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-06",
+      "subarea_code": "ICSR.1",
+      "statement": "Reports received by affiliates and local offices are forwarded to the global safety database within the SOP-defined timeline, and transfer timeliness is monitored.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Affiliate transfer metrics",
+        "Affiliate reconciliation"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-07",
+      "subarea_code": "ICSR.1",
+      "statement": "Partner-received cases reach the safety database within agreed timelines; late cases are reconciled.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "Partner reconciliation log",
+        "SDEA timelines"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(b)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-08",
+      "subarea_code": "ICSR.2",
+      "statement": "Case validity is assessed against the four minimum criteria, and invalid reports are retained and followed up where possible.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Validity SOP",
+        "Invalid case listing"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-09",
+      "subarea_code": "ICSR.2",
+      "statement": "Seriousness, including medically important events, is assessed per ICH criteria with reference to an IME list, and downgrades require documented medical rationale.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Seriousness assessment SOP",
+        "IME list",
+        "Downgrade log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-10",
+      "subarea_code": "ICSR.2",
+      "statement": "Expectedness is assessed against the correct reference document version for each market (CCDS, SmPC, USPI or IB).",
+      "applicability": null,
+      "inspector_evidence": [
+        "Expectedness SOP",
+        "Labeling version history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        },
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-11",
+      "subarea_code": "ICSR.2",
+      "statement": "Medical review of serious cases is performed by qualified physicians or HCPs, with company causality recorded separately from the reporter's.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Medical review records",
+        "Reviewer qualifications"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        },
+        {
+          "citation": "WHO-UMC causality assessment system",
+          "jurisdiction": "WHO",
+          "regulation_id": "who-umc-causality-assessment-vigibase-who-global-pv-framework"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-12",
+      "subarea_code": "ICSR.3",
+      "statement": "Events and products are coded with current MedDRA and WHODrug versions, and version upgrades are implemented within the release cycle.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Dictionary version log",
+        "Upversioning records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "MedDRA Term Selection: Points to Consider",
+          "jurisdiction": "other",
+          "regulation_id": "meddra-medical-dictionary-for-regulatory-activities"
+        },
+        {
+          "citation": "WHODrug Global",
+          "jurisdiction": "other",
+          "regulation_id": "whodrug-who-drug-dictionary"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-13",
+      "subarea_code": "ICSR.3",
+      "statement": "Coding follows MedDRA Points to Consider and a company coding convention, with consistency checked in QC.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Coding conventions",
+        "Coding QC findings"
+      ],
+      "crosswalks": [
+        {
+          "citation": "MedDRA Term Selection: Points to Consider",
+          "jurisdiction": "other",
+          "regulation_id": "meddra-medical-dictionary-for-regulatory-activities"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-14",
+      "subarea_code": "ICSR.3",
+      "statement": "Narratives follow a template and contain the clinical course, treatment, outcome and relevant history needed for independent assessment.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Narrative template",
+        "Narrative QC sample"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2B(R3)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2b-r3-electronic-transmission-of-icsrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-15",
+      "subarea_code": "ICSR.3",
+      "statement": "A risk-based case QC program samples cases, trends error rates by field and processor, and feeds findings into retraining or CAPA.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Case QC metrics",
+        "QC error trend report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-16",
+      "subarea_code": "ICSR.4",
+      "statement": "Valid serious ICSRs are submitted to EudraVigilance within 15 days and non-serious within 90 days of day zero.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "EV submission metrics",
+        "ACK listing"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "Regulation (EU) 1235/2010 / Directive 2010/84/EU",
+          "jurisdiction": "EU",
+          "regulation_id": "regulation-eu-no-1235-2010-directive-2010-84-eu-eu-pv-legislation"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-17",
+      "subarea_code": "ICSR.4",
+      "statement": "UK serious and non-serious ICSRs are submitted to the MHRA within 15 and 90 days respectively.",
+      "applicability": {
+        "markets": [
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "MHRA submission metrics",
+        "ACK listing"
+      ],
+      "crosswalks": [
+        {
+          "citation": "UK GPvP / HMR 2012",
+          "jurisdiction": "UK"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-18",
+      "subarea_code": "ICSR.4",
+      "statement": "Follow-up information that is significant is submitted within the same 15-day timeline as the initial report.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Follow-up timeliness metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(c)(1)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-19",
+      "subarea_code": "ICSR.4",
+      "statement": "Postmarketing 15-day reports for biological products, including vaccines, are submitted to FDA per 21 CFR 600.80.",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "product_types": [
+          "biologic",
+          "vaccine"
+        ]
+      },
+      "inspector_evidence": [
+        "600.80 submission log",
+        "FAERS/VAERS ACKs"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 600.80",
+          "jurisdiction": "US",
+          "regulation_id": "biologics-biosimilars-21-cfr-600-601-ema-regulation-726-2004-biologics-pv"
+        },
+        {
+          "citation": "21 CFR 600.80 / VAERS",
+          "jurisdiction": "US",
+          "regulation_id": "vaccines-gvp-add-i-21-cfr-part-600-vaers-vaccine-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-20",
+      "subarea_code": "ICSR.4",
+      "statement": "A country reporting-rules matrix defines expedited and periodic ICSR requirements for every market where products are authorised, and is kept current.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Reporting rules matrix",
+        "Matrix change history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-21",
+      "subarea_code": "ICSR.4",
+      "statement": "Expedited reports in Japan and Canada meet local 15-day timelines and local reportability criteria.",
+      "applicability": {
+        "markets": [
+          "JP",
+          "CA"
+        ]
+      },
+      "inspector_evidence": [
+        "Local submission metrics",
+        "Local reportability rules"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Japan PMD Act / MHLW GVP Ordinance",
+          "jurisdiction": "JP",
+          "regulation_id": "japan-pmda-mhlw-ministerial-ordinance-171-gpsp-gvsp-japan-pv-framework"
+        },
+        {
+          "citation": "Food and Drug Regulations C.01.016–C.01.019",
+          "jurisdiction": "CA",
+          "regulation_id": "canada-health-canada-food-and-drug-regulations-part-c-div-8-canada-pv-framework"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-22",
+      "subarea_code": "ICSR.5",
+      "statement": "Follow-up for serious and special-situation cases is attempted per a defined schedule with targeted questionnaires, and attempts are documented.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Follow-up SOP",
+        "Follow-up attempt log",
+        "Targeted questionnaires"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2D",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2d-post-approval-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-23",
+      "subarea_code": "ICSR.5",
+      "statement": "Pregnancy exposures are followed up to outcome, including infant status.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Pregnancy follow-up tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-24",
+      "subarea_code": "ICSR.5",
+      "statement": "Follow-up requests do not breach data protection rules, and reporter contact details are handled per privacy requirements.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Privacy assessment",
+        "Follow-up correspondence sample"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-25",
+      "subarea_code": "ICSR.6",
+      "statement": "Duplicate detection runs on every incoming case using defined matching criteria, and confirmed duplicates are merged with a retained audit trail.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Duplicate search SOP",
+        "Duplicate management log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "ICH E2B(R3)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2b-r3-electronic-transmission-of-icsrs"
+        }
+      ]
+    },
+    {
+      "check_id": "ICSR-26",
+      "subarea_code": "ICSR.6",
+      "statement": "Duplicates flagged by EudraVigilance are investigated and resolved within the timelines requested.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "EV duplicate notifications",
+        "Resolution records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-01",
+      "subarea_code": "LIT.1",
+      "statement": "At least weekly searches of a recognised database (e.g. Embase, Medline) cover every active substance the company holds, irrespective of brand.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Literature search log",
+        "Substance list",
+        "Search output"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "21 CFR 314.80",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-02",
+      "subarea_code": "LIT.1",
+      "statement": "For substances covered by the EMA MLM service, the MAH still screens literature outside MLM scope and reviews articles for non-ICSR safety information.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "MLM substance list",
+        "Search coverage map"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-03",
+      "subarea_code": "LIT.1",
+      "statement": "Literature cases meeting reporting criteria are submitted within 15 days of day zero, defined as the date a reviewer first identifies a valid case.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Literature case timeliness metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "21 CFR 314.80(c)(1)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-04",
+      "subarea_code": "LIT.1",
+      "statement": "Articles are reviewed for safety findings beyond individual cases (e.g. signals, aggregate data) and relevant findings are passed to signal management.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Article review records",
+        "Signal referral log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-05",
+      "subarea_code": "LIT.2",
+      "statement": "Local journals not indexed in global databases are identified and screened in every market where products are authorised.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Local journal list",
+        "Local screening log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-06",
+      "subarea_code": "LIT.2",
+      "statement": "Local literature searches are performed at a documented frequency and results reach the global safety database within defined timelines.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Local search records",
+        "Transfer metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-07",
+      "subarea_code": "LIT.2",
+      "statement": "The list of local journals is reviewed at least annually and updated for new market authorisations.",
+      "applicability": {
+        "requires": [
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "Journal list review record"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-08",
+      "subarea_code": "LIT.3",
+      "statement": "Search strings are documented, version-controlled and validated to retrieve known relevant articles.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Search strategy",
+        "Validation record"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-09",
+      "subarea_code": "LIT.3",
+      "statement": "Each search records date, database, string, hits and reviewer decision per article, retrievable for any past week.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Search audit trail",
+        "Reviewer decision log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-10",
+      "subarea_code": "LIT.3",
+      "statement": "Full-text articles are obtained promptly for potential cases, and translation of foreign-language articles does not delay day zero beyond reporting timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Full-text request log",
+        "Translation records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "LIT-11",
+      "subarea_code": "LIT.3",
+      "statement": "Literature activities outsourced to a vendor have a vendor search QC and reconciliation of weekly outputs.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Vendor literature QC records",
+        "Weekly reconciliation"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-01",
+      "subarea_code": "SIG.1",
+      "statement": "Signal detection covers all data sources (safety database, literature, clinical trials, EudraVigilance, partner data) at defined frequencies per product.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Signal detection plan",
+        "Data source list"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "CIOMS VIII",
+          "jurisdiction": "CIOMS",
+          "regulation_id": "cioms-viii-signal-detection-methodologies-2010"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-02",
+      "subarea_code": "SIG.1",
+      "statement": "EudraVigilance data are monitored for all active substances at the frequency required, with eRMR review recorded.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "eRMR review records",
+        "EV access log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "Commission Implementing Regulation (EU) 520/2012",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-03",
+      "subarea_code": "SIG.1",
+      "statement": "Disproportionality thresholds and methods are documented and justified, and quantitative output is reviewed by a qualified person.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Statistical methods document",
+        "Detection outputs"
+      ],
+      "crosswalks": [
+        {
+          "citation": "CIOMS VIII",
+          "jurisdiction": "CIOMS",
+          "regulation_id": "cioms-viii-signal-detection-methodologies-2010"
+        },
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-04",
+      "subarea_code": "SIG.1",
+      "statement": "Periodic review of postmarketing safety data is documented per product, including for products with low case volumes.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Periodic review reports",
+        "Product signal schedule"
+      ],
+      "crosswalks": [
+        {
+          "citation": "FDA Guidance: Good Pharmacovigilance Practices and Pharmacoepidemiologic Assessment (2005)",
+          "jurisdiction": "US"
+        },
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-05",
+      "subarea_code": "SIG.2",
+      "statement": "Signal validation decisions are documented with the data reviewed, rationale and date, within defined timelines from detection.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Validation records",
+        "Signal tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-06",
+      "subarea_code": "SIG.2",
+      "statement": "Validated signals are prioritised by documented criteria (severity, public health impact, novelty) that drive assessment timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Prioritisation criteria",
+        "Signal tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "CIOMS VIII",
+          "jurisdiction": "CIOMS",
+          "regulation_id": "cioms-viii-signal-detection-methodologies-2010"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-07",
+      "subarea_code": "SIG.2",
+      "statement": "Non-validated signals are retained with rationale and re-reviewed if new data emerge.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Closed signal log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-08",
+      "subarea_code": "SIG.3",
+      "statement": "Validated signals are assessed using all relevant data, and assessments are completed within target timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Signal assessment reports",
+        "Timeliness metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-09",
+      "subarea_code": "SIG.3",
+      "statement": "Signal outcomes are decided by a cross-functional body and translate into tracked actions (label change, RMP update, study).",
+      "applicability": null,
+      "inspector_evidence": [
+        "Committee minutes",
+        "Action tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-10",
+      "subarea_code": "SIG.3",
+      "statement": "Signal assessment conclusions are reflected in the next PSUR/PBRER and, where applicable, the RMP.",
+      "applicability": null,
+      "inspector_evidence": [
+        "PBRER signal section",
+        "RMP change log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-11",
+      "subarea_code": "SIG.4",
+      "statement": "A single signal tracking system records every signal from detection to closure with dates and outcomes.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Signal tracking database"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-12",
+      "subarea_code": "SIG.4",
+      "statement": "Emerging safety issues are notified to EMA and national authorities within 3 working days of awareness.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "Emerging safety issue notifications"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-13",
+      "subarea_code": "SIG.4",
+      "statement": "Validated signals from EudraVigilance monitoring are notified to the agency as required, as standalone notifications or via the PSUR.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "Standalone signal notifications",
+        "PSUR signal tabulation"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        },
+        {
+          "citation": "Commission Implementing Regulation (EU) 520/2012",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "SIG-14",
+      "subarea_code": "SIG.4",
+      "statement": "Partners are informed of validated signals within timelines set in the SDEA.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "Partner signal communications",
+        "SDEA"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IX",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ix-signal-management"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-01",
+      "subarea_code": "AGG.1",
+      "statement": "PSURs/PBRERs follow the ICH E2C(R2) structure and contain an integrated benefit-risk evaluation, not only a data listing.",
+      "applicability": null,
+      "inspector_evidence": [
+        "PBRERs",
+        "PBRER template"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2C(R2)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2c-r2-periodic-benefit-risk-evaluation-report-pbrer"
+        },
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-02",
+      "subarea_code": "AGG.1",
+      "statement": "PSUR data come from validated, reproducible database outputs, and PRAC assessment requests are tracked to completion.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "Line listings",
+        "PSUSA assessment tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-03",
+      "subarea_code": "AGG.2",
+      "statement": "PADERs are submitted on schedule for every approved application, including unmarketed ones.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "PADER calendar",
+        "Submission receipts"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(c)(2)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-04",
+      "subarea_code": "AGG.2",
+      "statement": "Quarterly PADERs are submitted within 30 days of quarter-end for the first 3 years, and annual PADERs within 60 days of the anniversary thereafter.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "PADER calendar",
+        "Submission receipts"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(c)(2)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-05",
+      "subarea_code": "AGG.2",
+      "statement": "Any PADER waiver or PBRER substitution is supported by FDA agreement on file.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "FDA waiver correspondence"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80(c)(2)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-06",
+      "subarea_code": "AGG.3",
+      "statement": "DSURs are prepared for every investigational product and submitted within 60 days of the DIBD anniversary.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "DSUR calendar",
+        "Submission receipts"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2F",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2f-development-safety-update-report-dsur"
+        },
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-07",
+      "subarea_code": "AGG.3",
+      "statement": "DSURs include the RSI in effect at the start of the reporting period and a cumulative SAE summary.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "DSURs",
+        "RSI version history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2F",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2f-development-safety-update-report-dsur"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-08",
+      "subarea_code": "AGG.3",
+      "statement": "US IND annual reports are submitted within 60 days of the IND anniversary.",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "product_types": [
+          "IND"
+        ]
+      },
+      "inspector_evidence": [
+        "IND annual report log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 312.33",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-312-ind-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-09",
+      "subarea_code": "AGG.4",
+      "statement": "A master schedule lists every periodic report with DLP, due date and owner, aligned to the EURD list and local requirements.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Periodic report master schedule",
+        "EURD list check"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-10",
+      "subarea_code": "AGG.4",
+      "statement": "PSURs are submitted within 70 days of the DLP for intervals up to 12 months and within 90 days for longer intervals.",
+      "applicability": {
+        "markets": [
+          "EU",
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "PSUR submission receipts"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        },
+        {
+          "citation": "UK GPvP / HMR 2012",
+          "jurisdiction": "UK"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-11",
+      "subarea_code": "AGG.4",
+      "statement": "Late or missed periodic reports are recorded as deviations with root cause and CAPA.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Deviation log",
+        "CAPA records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AGG-12",
+      "subarea_code": "AGG.4",
+      "statement": "Changes in EURD frequency or DLPs are checked monthly and the schedule updated.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ]
+      },
+      "inspector_evidence": [
+        "EURD monitoring log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vii-periodic-safety-update-reports"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-01",
+      "subarea_code": "RMM.1",
+      "statement": "An approved RMP exists for every product where required and reflects current safety concerns and pharmacovigilance activities.",
+      "applicability": {
+        "markets": [
+          "EU",
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "RMPs",
+        "RMP version log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module V",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-v-risk-management-systems"
+        },
+        {
+          "citation": "ICH E2E",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2e-pharmacovigilance-planning"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-02",
+      "subarea_code": "RMM.1",
+      "statement": "RMPs are updated when new information may change the safety specification, and updates are submitted with relevant procedures.",
+      "applicability": {
+        "markets": [
+          "EU",
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "RMP change history",
+        "Submission records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module V",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-v-risk-management-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-03",
+      "subarea_code": "RMM.1",
+      "statement": "Additional PV activities in the RMP, including imposed and agreed PASS, are on track against agreed milestones, and protocols and final reports are submitted on time.",
+      "applicability": {
+        "markets": [
+          "EU",
+          "UK"
+        ]
+      },
+      "inspector_evidence": [
+        "PASS milestone tracker",
+        "PASS protocols and reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VIII",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-viii-viii-a-post-authorisation-safety-efficacy-studies"
+        },
+        {
+          "citation": "GVP Module V",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-v-risk-management-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-04",
+      "subarea_code": "RMM.1",
+      "statement": "ATMP risk management includes post-authorisation follow-up of efficacy and adverse reactions, with long-term follow-up of treated patients as agreed at authorisation.",
+      "applicability": {
+        "markets": [
+          "EU"
+        ],
+        "product_types": [
+          "atmp"
+        ]
+      },
+      "inspector_evidence": [
+        "ATMP follow-up plan",
+        "Long-term follow-up registry reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Regulation (EC) 1394/2007 Article 14",
+          "jurisdiction": "EU",
+          "regulation_id": "atmps-eu-regulation-1394-2007-advanced-therapy-medicinal-products-pv"
+        },
+        {
+          "citation": "GVP Module V",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-v-risk-management-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-05",
+      "subarea_code": "RMM.2",
+      "statement": "Every approved REMS element is implemented as approved, with records showing each element is operating.",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "requires": [
+          "rems"
+        ]
+      },
+      "inspector_evidence": [
+        "REMS document",
+        "REMS operating records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "FD&C Act 505-1",
+          "jurisdiction": "US",
+          "regulation_id": "rems-21-cfr-505-1-fdaaa-505-1-risk-evaluation-and-mitigation-strategies"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-06",
+      "subarea_code": "RMM.2",
+      "statement": "REMS assessments are submitted per the approved timetable (at minimum 18 months, 3 and 7 years post-approval).",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "requires": [
+          "rems"
+        ]
+      },
+      "inspector_evidence": [
+        "REMS assessment calendar",
+        "Submission receipts"
+      ],
+      "crosswalks": [
+        {
+          "citation": "FD&C Act 505-1",
+          "jurisdiction": "US",
+          "regulation_id": "rems-21-cfr-505-1-fdaaa-505-1-risk-evaluation-and-mitigation-strategies"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-07",
+      "subarea_code": "RMM.2",
+      "statement": "REMS modifications are submitted to FDA before changes are implemented.",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "requires": [
+          "rems"
+        ]
+      },
+      "inspector_evidence": [
+        "REMS modification submissions"
+      ],
+      "crosswalks": [
+        {
+          "citation": "FD&C Act 505-1",
+          "jurisdiction": "US",
+          "regulation_id": "rems-21-cfr-505-1-fdaaa-505-1-risk-evaluation-and-mitigation-strategies"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-08",
+      "subarea_code": "RMM.3",
+      "statement": "Approved aRMM materials (educational materials, patient cards, controlled access) are distributed in each market per nationally agreed key elements.",
+      "applicability": {
+        "requires": [
+          "armm"
+        ]
+      },
+      "inspector_evidence": [
+        "aRMM distribution records",
+        "National approvals"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module XVI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-09",
+      "subarea_code": "RMM.3",
+      "statement": "Local affiliates confirm aRMM implementation dates, and gaps are escalated to global PV.",
+      "applicability": {
+        "requires": [
+          "armm",
+          "local_pv_contacts"
+        ]
+      },
+      "inspector_evidence": [
+        "aRMM implementation tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module XVI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-10",
+      "subarea_code": "RMM.3",
+      "statement": "aRMM materials are version-controlled and updated within agreed timelines after label changes.",
+      "applicability": {
+        "requires": [
+          "armm"
+        ]
+      },
+      "inspector_evidence": [
+        "Material version log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module XVI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-11",
+      "subarea_code": "RMM.4",
+      "statement": "Effectiveness of each aRMM is measured with defined process and outcome indicators, and results are reported in the PSUR/RMP.",
+      "applicability": {
+        "requires": [
+          "armm"
+        ]
+      },
+      "inspector_evidence": [
+        "Effectiveness study reports",
+        "PSUR RMM section"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module XVI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness"
+        }
+      ]
+    },
+    {
+      "check_id": "RMM-12",
+      "subarea_code": "RMM.4",
+      "statement": "Ineffective risk minimisation leads to documented corrective action.",
+      "applicability": {
+        "requires": [
+          "armm"
+        ]
+      },
+      "inspector_evidence": [
+        "Effectiveness review minutes",
+        "Action records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module XVI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-01",
+      "subarea_code": "RSI.1",
+      "statement": "The CCDS is maintained under a documented process with defined triggers and timelines for safety updates.",
+      "applicability": null,
+      "inspector_evidence": [
+        "CCDS SOP",
+        "CCDS version history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "CIOMS III/V",
+          "jurisdiction": "CIOMS",
+          "regulation_id": "cioms-ii-vii-psur-ccds-benefit-risk-clinical-trial-safety-dsur"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-02",
+      "subarea_code": "RSI.1",
+      "statement": "CCDS safety changes are approved by a labeling committee with documented medical rationale.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Labeling committee minutes"
+      ],
+      "crosswalks": [
+        {
+          "citation": "CIOMS III/V",
+          "jurisdiction": "CIOMS",
+          "regulation_id": "cioms-ii-vii-psur-ccds-benefit-risk-clinical-trial-safety-dsur"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-03",
+      "subarea_code": "RSI.1",
+      "statement": "The CCDS version used for expectedness and PBRERs is clearly identified for every period.",
+      "applicability": null,
+      "inspector_evidence": [
+        "CCDS version history",
+        "PBRER RSI section"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2C(R2)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2c-r2-periodic-benefit-risk-evaluation-report-pbrer"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-04",
+      "subarea_code": "RSI.2",
+      "statement": "Safety-related CCDS changes are submitted in every market within company target timelines, and delays are tracked.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Label implementation tracker",
+        "Market submission dates"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Directive 2001/83/EC Article 23",
+          "jurisdiction": "EU"
+        },
+        {
+          "citation": "Commission Regulation (EC) 1234/2008",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-05",
+      "subarea_code": "RSI.2",
+      "statement": "US safety labeling changes are submitted per 21 CFR 314.70, including CBE supplements where appropriate.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "Labeling supplements",
+        "FDA correspondence"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.70",
+          "jurisdiction": "US"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-06",
+      "subarea_code": "RSI.2",
+      "statement": "Product information and patient leaflets in distribution reflect the latest approved safety text within agreed timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Packaging implementation records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Directive 2001/83/EC Article 23",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-07",
+      "subarea_code": "RSI.3",
+      "statement": "Each IB contains a clearly identified RSI section, approved and version-controlled, used for SUSAR expectedness.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "IB RSI section",
+        "IB version history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        },
+        {
+          "citation": "ICH E2F",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2f-development-safety-update-report-dsur"
+        }
+      ]
+    },
+    {
+      "check_id": "RSI-08",
+      "subarea_code": "RSI.3",
+      "statement": "RSI changes take effect only after authority approval where required, and the version in force for each case is traceable.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "RSI approval records",
+        "Case expectedness audit"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-01",
+      "subarea_code": "PVA.1",
+      "statement": "A signed SDEA is in place with every partner that markets, distributes or develops company products.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "SDEA register",
+        "Signed SDEAs"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-02",
+      "subarea_code": "PVA.1",
+      "statement": "SDEAs define exchange timelines, responsibilities for submissions, signals, PSURs and RMMs, and are reviewed at a defined frequency.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "SDEAs",
+        "SDEA review log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-03",
+      "subarea_code": "PVA.1",
+      "statement": "New partners have an SDEA signed before product launch or transfer.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "Partner launch dates",
+        "SDEA execution dates"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-04",
+      "subarea_code": "PVA.1",
+      "statement": "SDEA commitments are tracked and partner non-compliance is escalated.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "SDEA compliance tracker",
+        "Escalation records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-05",
+      "subarea_code": "PVA.2",
+      "statement": "Vendors performing PV activities are overseen against KPIs and audited on a risk basis.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Vendor KPI reports",
+        "Audit schedule"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-06",
+      "subarea_code": "PVA.2",
+      "statement": "Contracts with PV vendors define tasks, KPIs, timelines, audit rights and data ownership.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Vendor contracts",
+        "Service agreements"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-07",
+      "subarea_code": "PVA.2",
+      "statement": "Vendors are qualified before performing PV work, including assessment of systems and staff competence.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Vendor qualification records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-08",
+      "subarea_code": "PVA.2",
+      "statement": "Vendor KPI breaches trigger documented corrective action and governance review.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Governance minutes",
+        "Vendor CAPAs"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-09",
+      "subarea_code": "PVA.2",
+      "statement": "Subcontracting by PV vendors requires company approval and is visible in the PSMF.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Subcontractor list",
+        "PSMF annex"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-10",
+      "subarea_code": "PVA.3",
+      "statement": "Safety data exchanged with each partner is reconciled at a defined frequency, and discrepancies are resolved and documented.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "Reconciliation reports",
+        "Discrepancy log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-11",
+      "subarea_code": "PVA.3",
+      "statement": "AE data from vendors (call centres, PSPs, market research) is reconciled with the safety database.",
+      "applicability": {
+        "requires": [
+          "vendor_performed"
+        ]
+      },
+      "inspector_evidence": [
+        "Vendor reconciliation reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-12",
+      "subarea_code": "PVA.3",
+      "statement": "Reconciliation discrepancies are trended and recurring causes addressed through CAPA.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Discrepancy trend report",
+        "CAPA records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-13",
+      "subarea_code": "PVA.4",
+      "statement": "Partners are audited on a risk basis, with audit frequency justified by risk assessment.",
+      "applicability": {
+        "requires": [
+          "sdea_partners"
+        ]
+      },
+      "inspector_evidence": [
+        "Partner risk assessment",
+        "Partner audit plan"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "PVA-14",
+      "subarea_code": "PVA.4",
+      "statement": "Partner and vendor audit findings are followed through to CAPA closure.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Audit reports",
+        "CAPA tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-01",
+      "subarea_code": "CTS.1",
+      "statement": "Investigators report SAEs to the sponsor within 24 hours, and sponsor intake timeliness is monitored.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "SAE intake metrics",
+        "Protocol SAE section"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E6",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e6-r2-r3-good-clinical-practice-gcp"
+        },
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-02",
+      "subarea_code": "CTS.2",
+      "statement": "IND safety reports are submitted within 7 or 15 days as applicable.",
+      "applicability": {
+        "product_types": [
+          "IND"
+        ]
+      },
+      "inspector_evidence": [
+        "IND safety report log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 312.32",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-312-ind-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-03",
+      "subarea_code": "CTS.1",
+      "statement": "Trial SAEs in the safety database are reconciled with the clinical database at defined intervals and before database lock.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "SAE reconciliation reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E6",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e6-r2-r3-good-clinical-practice-gcp"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-04",
+      "subarea_code": "CTS.1",
+      "statement": "SAE forms and processing conventions are consistent across studies.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "SAE form",
+        "Clinical safety SOP"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-05",
+      "subarea_code": "CTS.1",
+      "statement": "Causality from both investigator and sponsor is captured for every SAE, and investigator causality is not downgraded.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "Case causality fields",
+        "Medical review records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-06",
+      "subarea_code": "CTS.2",
+      "statement": "SUSARs are reported in EU via CTIS/EudraVigilance within 7 days (fatal or life-threatening) or 15 days (other).",
+      "applicability": {
+        "markets": [
+          "EU"
+        ],
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "SUSAR timeliness metrics",
+        "EV ACKs"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        },
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-07",
+      "subarea_code": "CTS.2",
+      "statement": "IND safety reports are distributed to all participating investigators.",
+      "applicability": {
+        "product_types": [
+          "IND"
+        ]
+      },
+      "inspector_evidence": [
+        "Investigator distribution records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 312.32",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-312-ind-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-08",
+      "subarea_code": "CTS.2",
+      "statement": "Aggregate analyses of SAEs indicating important risk are reported as IND safety reports.",
+      "applicability": {
+        "product_types": [
+          "IND"
+        ]
+      },
+      "inspector_evidence": [
+        "Aggregate analysis records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 312.32",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-312-ind-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-09",
+      "subarea_code": "CTS.2",
+      "statement": "Ethics committees receive safety information as required by local regulation.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "EC notification records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E6",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e6-r2-r3-good-clinical-practice-gcp"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-10",
+      "subarea_code": "CTS.3",
+      "statement": "Blinded cases that qualify as SUSARs are unblinded by an independent person before submission, with the blind maintained for the study team.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "Unblinding SOP",
+        "Unblinding log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        },
+        {
+          "citation": "EU CTR 536/2014",
+          "jurisdiction": "EU",
+          "regulation_id": "eu-ctr-regulation-536-2014-clinical-trial-regulation"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-11",
+      "subarea_code": "CTS.3",
+      "statement": "Unblinding access is restricted and logged.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "IxRS access log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-12",
+      "subarea_code": "CTS.3",
+      "statement": "Unblinding is performed promptly enough to meet 7/15-day timelines.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "Unblinding timeliness metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2A",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2a-clinical-safety-data-management"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-13",
+      "subarea_code": "CTS.4",
+      "statement": "A DMC charter defines safety review frequency, data flow and communication to the sponsor.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "DMC charter",
+        "DMC minutes"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E6",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e6-r2-r3-good-clinical-practice-gcp"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-14",
+      "subarea_code": "CTS.4",
+      "statement": "Safety content in protocols, IBs and informed consent forms is consistent and updated after RSI changes.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "Document alignment check",
+        "ICF version history"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E6",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e6-r2-r3-good-clinical-practice-gcp"
+        }
+      ]
+    },
+    {
+      "check_id": "CTS-15",
+      "subarea_code": "CTS.4",
+      "statement": "Safety signals from trials feed into DSURs and IB updates.",
+      "applicability": {
+        "requires": [
+          "active_trials"
+        ]
+      },
+      "inspector_evidence": [
+        "DSUR",
+        "IB update log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2F",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2f-development-safety-update-report-dsur"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-01",
+      "subarea_code": "SYS.1",
+      "statement": "A single validated safety database is the system of record for all cases, and spreadsheet trackers are not used as a substitute.",
+      "applicability": null,
+      "inspector_evidence": [
+        "System inventory",
+        "Database validation summary"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-02",
+      "subarea_code": "SYS.1",
+      "statement": "Safety database configuration (reportability rules, product dictionary) is controlled and changes are tested before release.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Configuration specification",
+        "Change records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-03",
+      "subarea_code": "SYS.1",
+      "statement": "Case records are retained for the required period after product withdrawal.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Retention policy",
+        "Archive records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        },
+        {
+          "citation": "21 CFR 314.80",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-04",
+      "subarea_code": "SYS.2",
+      "statement": "E2B(R3) gateway connections to each authority are tested and acknowledgements are reconciled.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Gateway test records",
+        "ACK reconciliation"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2B(R3)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2b-r3-electronic-transmission-of-icsrs"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-05",
+      "subarea_code": "SYS.2",
+      "statement": "Negative ACKs and failed transmissions are resolved and resubmitted within reporting timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "NACK log",
+        "Resubmission records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "ICH E2B(R3)",
+          "jurisdiction": "ICH",
+          "regulation_id": "ich-e2b-r3-electronic-transmission-of-icsrs"
+        },
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-06",
+      "subarea_code": "SYS.2",
+      "statement": "FDA electronic submissions via ESG are monitored for completion.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "ESG submission log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.80",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-314-nda-post-marketing-safety-reporting"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-07",
+      "subarea_code": "SYS.3",
+      "statement": "Data migrations are planned, validated with documented mapping and reconciliation, and no case data are lost or altered.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Migration plan",
+        "Mapping specification",
+        "Reconciliation report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-08",
+      "subarea_code": "SYS.3",
+      "statement": "Post-migration verification confirms reportability and data integrity.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Post-migration verification report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-09",
+      "subarea_code": "SYS.4",
+      "statement": "Computerised PV systems are validated per a risk-based approach with documented validation deliverables.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Validation plan",
+        "Validation summary report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        },
+        {
+          "citation": "21 CFR Part 11",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-11-electronic-records-and-electronic-signatures"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-10",
+      "subarea_code": "SYS.4",
+      "statement": "System changes follow change control, with impact assessment and regression testing.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Change control records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-11",
+      "subarea_code": "SYS.4",
+      "statement": "Periodic review confirms systems remain in a validated state.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Periodic review reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-12",
+      "subarea_code": "SYS.5",
+      "statement": "User access is role-based, granted on approval and reviewed periodically, with leavers removed promptly.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Access review records",
+        "User access list"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        },
+        {
+          "citation": "21 CFR Part 11",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-11-electronic-records-and-electronic-signatures"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-13",
+      "subarea_code": "SYS.5",
+      "statement": "Audit trails capture who changed case data, when and why, and are reviewed.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Audit trail extract",
+        "Audit trail review records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR Part 11",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-11-electronic-records-and-electronic-signatures"
+        },
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        }
+      ]
+    },
+    {
+      "check_id": "SYS-14",
+      "subarea_code": "SYS.5",
+      "statement": "A business continuity plan covering safety database outage is tested, including manual reporting fallback.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Business continuity plan",
+        "BCP test report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "EU GMP Annex 11",
+          "jurisdiction": "EU",
+          "regulation_id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-01",
+      "subarea_code": "AUD.1",
+      "statement": "A risk-based PV audit strategy covers all PV processes, affiliates, partners and vendors over a defined cycle.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Audit strategy",
+        "Risk assessment"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-02",
+      "subarea_code": "AUD.1",
+      "statement": "The annual PV audit plan is executed as planned, and deviations are justified.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Annual audit plan",
+        "Audit completion status"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-03",
+      "subarea_code": "AUD.1",
+      "statement": "Auditors are independent of the processes they audit and are qualified.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Auditor qualifications",
+        "Independence statement"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-04",
+      "subarea_code": "AUD.2",
+      "statement": "Audit and inspection findings have CAPAs with root cause analysis, owners and due dates.",
+      "applicability": null,
+      "inspector_evidence": [
+        "CAPA records",
+        "Root cause analyses"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-05",
+      "subarea_code": "AUD.2",
+      "statement": "CAPA effectiveness is verified before closure.",
+      "applicability": null,
+      "inspector_evidence": [
+        "CAPA effectiveness checks"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-06",
+      "subarea_code": "AUD.2",
+      "statement": "PV deviations, including late submissions, are recorded and assessed for impact.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Deviation log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-07",
+      "subarea_code": "AUD.2",
+      "statement": "Significant audit findings are communicated to the QPPV, and a note is placed in the PSMF.",
+      "applicability": {
+        "requires": [
+          "psmf"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF audit annex",
+        "QPPV notification"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        },
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-08",
+      "subarea_code": "AUD.3",
+      "statement": "Compliance KPIs for ICSR, PSUR and literature timeliness are measured monthly against targets.",
+      "applicability": null,
+      "inspector_evidence": [
+        "KPI dashboard"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-09",
+      "subarea_code": "AUD.3",
+      "statement": "KPI trends below target trigger investigation and CAPA.",
+      "applicability": null,
+      "inspector_evidence": [
+        "KPI trend reports",
+        "CAPA records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-10",
+      "subarea_code": "AUD.3",
+      "statement": "Compliance metrics are included in the PSMF annex as required.",
+      "applicability": {
+        "requires": [
+          "psmf"
+        ]
+      },
+      "inspector_evidence": [
+        "PSMF performance annex"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module II",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-11",
+      "subarea_code": "AUD.4",
+      "statement": "An inspection readiness plan with roles and a document request process is maintained and rehearsed.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Inspection readiness plan",
+        "Mock inspection report"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module III",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iii-pharmacovigilance-inspections"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-12",
+      "subarea_code": "AUD.4",
+      "statement": "Inspection findings are responded to within the deadline set by the authority, and commitments are tracked.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Inspection responses",
+        "Commitment tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module III",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iii-pharmacovigilance-inspections"
+        }
+      ]
+    },
+    {
+      "check_id": "AUD-13",
+      "subarea_code": "AUD.4",
+      "statement": "Inspection history and outcomes are recorded and inform the audit strategy.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Inspection history log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module III",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iii-pharmacovigilance-inspections"
+        },
+        {
+          "citation": "GVP Module IV",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-iv-pharmacovigilance-audits"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-01",
+      "subarea_code": "IFC.1",
+      "statement": "Medical information enquiries are screened for AEs, and identified AEs are forwarded to PV within one business day.",
+      "applicability": null,
+      "inspector_evidence": [
+        "MI-to-PV transfer metrics",
+        "MI SOP"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-02",
+      "subarea_code": "IFC.1",
+      "statement": "MI and PV records are reconciled periodically to confirm no AE was missed.",
+      "applicability": null,
+      "inspector_evidence": [
+        "MI reconciliation reports"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-03",
+      "subarea_code": "IFC.1",
+      "statement": "MI staff are trained on AE and special situation identification.",
+      "applicability": null,
+      "inspector_evidence": [
+        "MI training records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-04",
+      "subarea_code": "IFC.2",
+      "statement": "Product complaints with an associated AE are forwarded to PV, and AEs with possible quality defects are forwarded to quality, within defined timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "PV-quality interface SOP",
+        "Transfer metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        },
+        {
+          "citation": "21 CFR 211.198",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-211-cgmp-for-finished-pharmaceuticals"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-05",
+      "subarea_code": "IFC.2",
+      "statement": "Field Alert Reports are submitted within 3 working days when required.",
+      "applicability": {
+        "markets": [
+          "US"
+        ]
+      },
+      "inspector_evidence": [
+        "FAR log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR 314.81(b)(1)",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-314-81-b-1-field-alert-reports-fars"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-06",
+      "subarea_code": "IFC.2",
+      "statement": "Combination product postmarketing safety reports meet device and drug reporting requirements.",
+      "applicability": {
+        "markets": [
+          "US"
+        ],
+        "product_types": [
+          "device_combination"
+        ]
+      },
+      "inspector_evidence": [
+        "Combination product reporting matrix",
+        "MDR/ICSR submissions"
+      ],
+      "crosswalks": [
+        {
+          "citation": "21 CFR Part 4, Subpart B",
+          "jurisdiction": "US",
+          "regulation_id": "21-cfr-part-4-combination-products"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-07",
+      "subarea_code": "IFC.3",
+      "statement": "Safety-related regulatory commitments are tracked to completion.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Commitment tracker"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-08",
+      "subarea_code": "IFC.3",
+      "statement": "Safety-related correspondence from authorities is routed to PV and answered within the requested timelines.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Authority correspondence log"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module I",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-09",
+      "subarea_code": "IFC.3",
+      "statement": "New information that could affect benefit-risk is communicated to authorities promptly.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Benefit-risk communications"
+      ],
+      "crosswalks": [
+        {
+          "citation": "Directive 2001/83/EC Article 23",
+          "jurisdiction": "EU"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-10",
+      "subarea_code": "IFC.4",
+      "statement": "Each patient support programme has a PV agreement and AE reporting process, with reconciliation.",
+      "applicability": {
+        "requires": [
+          "patient_programmes"
+        ]
+      },
+      "inspector_evidence": [
+        "PSP inventory",
+        "PV agreements",
+        "PSP reconciliation"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-11",
+      "subarea_code": "IFC.4",
+      "statement": "Market research programmes have AE reporting obligations in contracts.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Market research contracts",
+        "AE reporting records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-12",
+      "subarea_code": "IFC.4",
+      "statement": "Digital channels and apps owned by the company are listed and screened for AEs.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Digital channel inventory",
+        "Screening records"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    },
+    {
+      "check_id": "IFC-13",
+      "subarea_code": "IFC.4",
+      "statement": "AE reports from commercial programmes reach PV within defined timelines, with timeliness monitored.",
+      "applicability": null,
+      "inspector_evidence": [
+        "Programme AE metrics"
+      ],
+      "crosswalks": [
+        {
+          "citation": "GVP Module VI",
+          "jurisdiction": "EU",
+          "regulation_id": "gvp-module-vi-collection-management-and-submission-of-adrs"
+        }
+      ]
+    }
+  ]
+}

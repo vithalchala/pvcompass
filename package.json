@@ -14,7 +14,8 @@
     "db:seed": "tsx src/db/seed.ts",
     "db:load-regulations": "tsx src/db/load-regulations.ts",
     "db:migrate": "node scripts/migrate.mjs",
-    "test": "tsx --conditions=react-server --test test/*.test.ts"
+    "test": "tsx --conditions=react-server --test --test-concurrency=1 test/*.test.ts",
+    "user:add": "tsx src/db/add-user.ts"
   },
   "dependencies": {
     "@next/env": "15.5.28",

@@ -1,0 +1,139 @@
+{
+  "note": "Frozen area and sub-area list from the PVCompass build specification (4 Oct 2026), section 5. Codes must not change once any mapping exists.",
+  "areas": [
+    {
+      "code": "QMS",
+      "name": "PV system and quality management",
+      "description": "The PSMF, QPPV and local responsible persons, SOPs, training and governance of the PV system.",
+      "sub_areas": [
+        { "code": "QMS.1", "name": "PSMF", "description": "The PV system master file, its annexes, logbook and location." },
+        { "code": "QMS.2", "name": "QPPV and local responsible persons", "description": "QPPV, deputy and country-level PV contacts, their availability and oversight." },
+        { "code": "QMS.3", "name": "SOPs and document control", "description": "Written procedures covering every PV process, kept under version control." },
+        { "code": "QMS.4", "name": "Training", "description": "Role-based PV training and awareness training outside the PV function." },
+        { "code": "QMS.5", "name": "Governance and oversight", "description": "Management review, PV committees and escalation of safety issues." }
+      ]
+    },
+    {
+      "code": "ICSR",
+      "name": "ICSR management",
+      "description": "Individual case safety reports from intake through assessment, coding, submission and follow-up.",
+      "sub_areas": [
+        { "code": "ICSR.1", "name": "Intake from all sources", "description": "Spontaneous, solicited, literature, partner, social media and other sources of adverse event data." },
+        { "code": "ICSR.2", "name": "Validity, seriousness, expectedness, causality", "description": "Case validity criteria and medical assessment of each case." },
+        { "code": "ICSR.3", "name": "Coding and data quality", "description": "MedDRA and WHODrug coding, narrative quality and case QC." },
+        { "code": "ICSR.4", "name": "Expedited reporting and submission", "description": "Timely electronic submission of expedited reports to each authority." },
+        { "code": "ICSR.5", "name": "Follow-up", "description": "Obtaining missing information for serious and important cases." },
+        { "code": "ICSR.6", "name": "Duplicates", "description": "Detecting and managing duplicate case reports." }
+      ]
+    },
+    {
+      "code": "LIT",
+      "name": "Literature monitoring",
+      "description": "Screening of global and local scientific literature for adverse reactions and safety information.",
+      "sub_areas": [
+        { "code": "LIT.1", "name": "Global search", "description": "Searches of major literature databases at the required frequency." },
+        { "code": "LIT.2", "name": "Local literature", "description": "Local journals in the markets where products are authorised." },
+        { "code": "LIT.3", "name": "Search strategy and review records", "description": "Documented search strings, results, reviewer decisions and day-zero dates." }
+      ]
+    },
+    {
+      "code": "SIG",
+      "name": "Signal management",
+      "description": "Detection, validation, prioritisation, assessment and communication of safety signals.",
+      "sub_areas": [
+        { "code": "SIG.1", "name": "Detection", "description": "Routine review of all relevant data sources for new or changed risks." },
+        { "code": "SIG.2", "name": "Validation and prioritisation", "description": "Deciding whether a signal is valid and how urgently to assess it." },
+        { "code": "SIG.3", "name": "Assessment", "description": "Evaluation of validated signals and the decision on action." },
+        { "code": "SIG.4", "name": "Tracking and notification", "description": "Signal tracking records and notification of authorities and partners." }
+      ]
+    },
+    {
+      "code": "AGG",
+      "name": "Aggregate reports",
+      "description": "PSURs/PBRERs, PADERs/PAERs and DSURs, their content and on-time submission.",
+      "sub_areas": [
+        { "code": "AGG.1", "name": "PSUR/PBRER", "description": "Periodic benefit-risk evaluation reports for authorised products." },
+        { "code": "AGG.2", "name": "PADER/PAER", "description": "US periodic adverse drug experience reports." },
+        { "code": "AGG.3", "name": "DSUR", "description": "Development safety update reports for investigational products." },
+        { "code": "AGG.4", "name": "Scheduling and submission compliance", "description": "Tracking of data lock points, due dates and submission evidence." }
+      ]
+    },
+    {
+      "code": "RMM",
+      "name": "Risk management",
+      "description": "Risk management plans, REMS, additional risk minimisation and its effectiveness.",
+      "sub_areas": [
+        { "code": "RMM.1", "name": "RMP", "description": "EU-format and other risk management plans and their updates." },
+        { "code": "RMM.2", "name": "REMS", "description": "US risk evaluation and mitigation strategies and assessments." },
+        { "code": "RMM.3", "name": "aRMM implementation", "description": "Additional risk minimisation measures delivered in each market." },
+        { "code": "RMM.4", "name": "Effectiveness evaluation", "description": "Measuring whether risk minimisation is working." }
+      ]
+    },
+    {
+      "code": "RSI",
+      "name": "Reference safety information",
+      "description": "Company core safety information, labelling updates and the reference safety information for trials.",
+      "sub_areas": [
+        { "code": "RSI.1", "name": "CCDS/RSI maintenance", "description": "Governance of the company core data sheet and core safety information." },
+        { "code": "RSI.2", "name": "Label update timeliness", "description": "Timely implementation of safety changes in local labels." },
+        { "code": "RSI.3", "name": "IB RSI", "description": "Reference safety information in investigator's brochures." }
+      ]
+    },
+    {
+      "code": "PVA",
+      "name": "Partner and vendor management",
+      "description": "Safety data exchange agreements, vendor oversight, reconciliation and audits of partners and vendors.",
+      "sub_areas": [
+        { "code": "PVA.1", "name": "SDEAs", "description": "Safety data exchange agreements with licensing and distribution partners." },
+        { "code": "PVA.2", "name": "Vendor contracts and oversight", "description": "Contracts and KPI oversight of service providers performing PV activities." },
+        { "code": "PVA.3", "name": "Case reconciliation", "description": "Reconciliation of safety data exchanged with partners and vendors." },
+        { "code": "PVA.4", "name": "Partner and vendor audits", "description": "Risk-based audits of partners and vendors." }
+      ]
+    },
+    {
+      "code": "CTS",
+      "name": "Clinical trial safety",
+      "description": "Safety in clinical development: SAEs, SUSARs, IND safety reports, unblinding and DSMBs.",
+      "sub_areas": [
+        { "code": "CTS.1", "name": "SAE handling", "description": "Collection and processing of serious adverse events from trials." },
+        { "code": "CTS.2", "name": "SUSAR and IND safety reporting", "description": "Expedited reporting from clinical trials to authorities, ethics committees and investigators." },
+        { "code": "CTS.3", "name": "Unblinding", "description": "Unblinding of cases for expedited reporting while protecting trial integrity." },
+        { "code": "CTS.4", "name": "DSMB and IB/protocol alignment", "description": "Data monitoring committees and consistency of safety content across trial documents." }
+      ]
+    },
+    {
+      "code": "SYS",
+      "name": "Safety data and systems",
+      "description": "The safety database, E2B gateway, data migration, validation and access control.",
+      "sub_areas": [
+        { "code": "SYS.1", "name": "Safety database", "description": "The system of record for adverse event cases." },
+        { "code": "SYS.2", "name": "E2B gateway", "description": "Electronic transmission of ICSRs to authorities and partners." },
+        { "code": "SYS.3", "name": "Data migration", "description": "Moving case data between systems without loss or change." },
+        { "code": "SYS.4", "name": "System validation", "description": "Validation and change control of computerised PV systems." },
+        { "code": "SYS.5", "name": "Access control", "description": "User access, audit trails and business continuity." }
+      ]
+    },
+    {
+      "code": "AUD",
+      "name": "Audit, CAPA and compliance",
+      "description": "The PV audit programme, CAPAs and deviations, compliance KPIs and inspection management.",
+      "sub_areas": [
+        { "code": "AUD.1", "name": "Audit programme", "description": "Risk-based PV audit strategy and plan." },
+        { "code": "AUD.2", "name": "CAPA and deviations", "description": "Recording, root-cause analysis and follow-through of corrective actions." },
+        { "code": "AUD.3", "name": "Compliance KPIs", "description": "Measurement and review of PV compliance metrics." },
+        { "code": "AUD.4", "name": "Inspection management", "description": "Readiness, hosting and response for regulatory inspections." }
+      ]
+    },
+    {
+      "code": "IFC",
+      "name": "Cross-functional interfaces",
+      "description": "How safety information reaches PV from medical information, quality, regulatory affairs and commercial programmes.",
+      "sub_areas": [
+        { "code": "IFC.1", "name": "Medical information", "description": "Adverse events received through medical information enquiries." },
+        { "code": "IFC.2", "name": "Product quality and complaints", "description": "Exchange between product complaints and PV." },
+        { "code": "IFC.3", "name": "Regulatory affairs", "description": "Regulatory submissions, commitments and correspondence with safety content." },
+        { "code": "IFC.4", "name": "Commercial programmes", "description": "Patient support programmes, market research and digital channels." }
+      ]
+    }
+  ]
+}

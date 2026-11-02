@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Code, NumberedItem, pad2, SectionLabel } from "@/components/ui";
+import { Code, pad2, SectionLabel, StatusTag } from "@/components/ui";
 import { getRegulation } from "@/lib/queries";
 
 type Props = { params: Promise<{ id: string }> };
@@ -73,14 +73,18 @@ export default async function RegulationPage({ params }: Props) {
         ) : (
           <ol>
             {reg.linked.map((c) => (
-              <NumberedItem
-                key={c.checkId}
-                n={`${pad2(c.subNumber)}.${pad2(c.checkNumber)}`}
-                href={`/areas/${c.areaCode}`}
-                title={c.question}
-                description={`${pad2(c.areaNumber)} ${c.areaName}`}
-                aside={<Code>{c.areaCode}</Code>}
-              />
+              <li key={`${c.checkId}-${c.citation}`} className="grid grid-cols-[5rem_1fr_auto] gap-x-4 border-b border-rule py-4 last:border-b-0">
+                <Link href={`/checks/${c.checkId}`} className="pt-0.5 hover:underline">
+                  <Code>{c.checkId}</Code>
+                </Link>
+                <div className="min-w-0">
+                  <span className="font-medium">{c.statement}</span>
+                  <p className="mt-1 text-sm text-muted">
+                    {pad2(c.areaNumber)} {c.areaName} · cites <Code>{c.citation}</Code>
+                  </p>
+                </div>
+                <StatusTag status={c.status} />
+              </li>
             ))}
           </ol>
         )}

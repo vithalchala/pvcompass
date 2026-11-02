@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Code, NumberedItem, pad2, SectionLabel, StatusTag } from "@/components/ui";
+import { CheckFacts, Code, pad2, SectionLabel, StatusTag } from "@/components/ui";
 import { getArea, getAreaTree } from "@/lib/queries";
 
 type Props = { params: Promise<{ code: string }> };
@@ -18,7 +18,7 @@ export default async function AreaPage({ params }: Props) {
 
   return (
     <article>
-      <Link href="/areas" className="label text-muted hover:text-ink">← Areas</Link>
+      <Link href="/areas" className="label text-muted hover:text-ink">← Check library</Link>
       <div className="mt-4 mb-10">
         <div className="font-mono text-sm text-muted">
           {pad2(area.number)} · {area.code}
@@ -28,28 +28,27 @@ export default async function AreaPage({ params }: Props) {
       </div>
 
       {subs.map((sub) => (
-        <section key={sub.id} className="mb-10">
-          <SectionLabel n={sub.number}>{sub.name}</SectionLabel>
+        <section key={sub.code} className="mb-10">
+          <SectionLabel n={sub.number}>
+            {sub.name} <span className="text-faint">· {sub.code}</span>
+          </SectionLabel>
           <p className="-mt-2 mb-2 text-sm text-muted">{sub.description}</p>
+          {sub.checks.length === 0 && <p className="py-3 text-sm text-faint">No checks drafted yet.</p>}
           <ol>
             {sub.checks.map((c) => (
-              <NumberedItem
-                key={c.id}
-                n={`${pad2(sub.number)}.${pad2(c.number)}`}
-                title={c.question}
-                description={c.guidance}
-                aside={<StatusTag status={c.status} />}
-              >
-                {c.regs.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
-                    {c.regs.map((r) => (
-                      <Link key={r.id} href={`/regulations/${encodeURIComponent(r.id)}`} className="text-muted hover:text-ink">
-                        <Code>{r.label}</Code>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </NumberedItem>
+              <li key={c.checkId} className="grid grid-cols-[5rem_1fr_auto] gap-x-4 border-b border-rule py-4 last:border-b-0">
+                <Link href={`/checks/${c.checkId}`} className="pt-0.5 hover:underline">
+                  <Code>{c.checkId}</Code>
+                </Link>
+                <div className="min-w-0">
+                  <span className="font-medium">{c.statement}</span>
+                  <CheckFacts applicability={c.applicability} inspectorEvidence={c.inspectorEvidence} crosswalks={c.crosswalks} />
+                </div>
+                <div className="space-y-1 text-right">
+                  <StatusTag status={c.status} />
+                  <div className="font-mono text-xs text-faint">v{c.version}</div>
+                </div>
+              </li>
             ))}
           </ol>
         </section>

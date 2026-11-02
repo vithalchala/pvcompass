@@ -2,25 +2,30 @@
 
 Inspection readiness for a PV system.
 
-PV Compass is a preparation library. It organises a pharmacovigilance system into 12 areas,
-each with sub-areas and checks, and links every check to the regulations it rests on.
+PV Compass turns inspection findings and regulatory changes into "check your PV system" alerts,
+routed to the parts of each company's PV system they affect. Phase 1 (this code) is the
+foundation and the check library: the 12 frozen PV system areas, their sub-areas, about 170
+LLM-drafted checks with crosswalks to the regulations corpus, and area-by-area approval by a
+named check-library owner. `/pipeline` shows every stage of the engine and what runs today.
 
 > **Preparation tool. Not a system of record. Not validated. No e-signatures.**
 
 Stack: Next.js 15 (App Router, TypeScript), Drizzle ORM, local Postgres, Tailwind CSS v4,
-cookie session login (iron-session). There is one admin user, whose password comes from
-`ADMIN_PASSWORD`.
+cookie session login (iron-session). Users sign in by email; every approval records who made it.
 
 ## Pages
 
 | Route               | Purpose                                    |
 | ------------------- | ------------------------------------------ |
-| `/login`            | Admin sign-in                              |
-| `/areas`            | The 12 PV areas                            |
-| `/areas/[code]`     | Sub-areas and checks for one area          |
+| `/login`            | Sign in with email and password            |
+| `/pipeline`         | The 12 stages of the engine, live counts, delivery phases |
+| `/areas`            | Check library: the 12 frozen areas         |
+| `/areas/[code]`     | Sub-areas and checks for one area, with applicability, evidence and crosswalks |
+| `/checks/[id]`      | One check: versions and review history     |
+| `/review`           | Area-by-area approval: approve, reject, edit (new version), retire (`?area=`) |
 | `/regulations`      | Search (`?q=`) and jurisdiction filter (`?j=`) |
-| `/regulations/[id]` | Full summary, tags, source, as-of date, citing checks |
-| `/review`           | Area-by-area check approval (`?area=`)     |
+| `/regulations/[id]` | Summary, source, as-of date, checks that cite it |
+| `/users`            | Add users and assign roles (company admin) |
 
 Every route except `/login` needs a session.
 
@@ -54,8 +59,19 @@ cp .env.example .env.local
 | Variable         | Required | Description                                                                                    |
 | ---------------- | -------- | ---------------------------------------------------------------------------------------------- |
 | `DATABASE_URL`   | yes      | e.g. `postgres://pvcompass:pvcompass@localhost:5432/pvcompass`                                 |
-| `ADMIN_PASSWORD` | yes      | Password for the single admin user                                                             |
-| `SESSION_SECRET` | no       | 32+ characters, used to sign the session cookie. If unset, a key is derived from `ADMIN_PASSWORD` |
+| `ADMIN_EMAIL`    | first seed | Email of the first user, created by `db:seed` when there are no users    |
+| `ADMIN_PASSWORD` | first seed | That user's password. Also used to derive the session key if `SESSION_SECRET` is unset |
+| `ADMIN_NAME`     | no       | That user's display name (default "Admin")                                                 |
+| `SESSION_SECRET` | no       | 32+ characters, used to sign the session cookie                                            |
+
+The first user gets every role. Add named reviewers on `/users`, or from the command line:
+
+```bash
+USER_PASSWORD='…' npm run user:add -- vithal@example.com "Vithal" library_owner,company_admin
+```
+
+Roles: `viewer`, `check_owner`, `mapping_approver`, `library_owner` (approves checks),
+`company_admin` (manages users).
 
 `.env.local` is git-ignored. The Drizzle config and the seed script read it too.
 
@@ -64,7 +80,7 @@ cp .env.example .env.local
 ```bash
 npm install
 npm run db:migrate            # create tables from drizzle/*.sql
-npm run db:seed               # areas + checks, and regulations from data/regulations.json
+npm run db:seed               # regulations, reference model, check library, first user
 ```
 
 ### Regulations data
@@ -95,9 +111,18 @@ adds and updates entries, deletes ids no longer in the file, and sets the corpus
 the newest `as_of`. Search is plain substring matching over id, title, summary, section, source
 label and tags. No AI is involved.
 
-The areas and checks in `src/db/seed-data.ts` are an illustrative starter set (12 areas,
-48 checks). Their citations point at ids in the current `data/regulations.json`; a check links to a regulation only when its id exists in the JSON file; the seed
-reports how many links it skipped. `npm run db:seed` wipes review status.
+### Reference model and check library
+
+- `data/reference-model.json`: the 12 frozen areas and their sub-areas (build spec section 5).
+  Codes such as `ICSR` and `ICSR.4` must not change once mappings exist.
+- `data/checks.json`: the check library. Each check has a stable `check_id` (`ICSR-07`, never
+  reused), its sub-area, one verifiable `statement`, `applicability` predicates, the
+  `inspector_evidence` to have ready, and `crosswalks` (citation text, optionally linked to a
+  `data/regulations.json` id).
+
+`npm run db:seed` validates both files and refuses to load anything if a problem is found. It is
+safe to re-run: new checks load as version 1 drafts; a check whose file text changed gets a new
+version and returns to draft; approvals and in-app edits are kept while the file is unchanged.
 
 ## 4. Run
 
@@ -105,7 +130,7 @@ reports how many links it skipped. `npm run db:seed` wipes review status.
 npm run dev
 ```
 
-Open http://localhost:3000 and sign in with `ADMIN_PASSWORD`.
+Open http://localhost:3000 and sign in with `ADMIN_EMAIL` / `ADMIN_PASSWORD`.
 
 Other scripts: `npm run build`, `npm start`, `npm run typecheck`, `npm run db:studio`.
 
@@ -119,8 +144,8 @@ local dev database directly, without a migration file.)
 npm test
 ```
 
-Loader tests always run. Search tests run only when `TEST_DATABASE_URL` is set; they create
-tables and replace all regulations in that database, so use a separate, empty one:
+Loader tests always run. Database tests (search, library sync, review rules) run only when `TEST_DATABASE_URL` is set;
+they create tables and wipe the library tables in that database, so use a separate, empty one:
 
 ```bash
 createdb pvcompass_test
@@ -161,7 +186,7 @@ One-time setup:
 1. In Railway, create a project from the GitHub repo and add a **PostgreSQL** database.
 2. On the app service, set variables:
    - `DATABASE_URL` = `${{Postgres.DATABASE_URL}}` (a reference to the database service)
-   - `ADMIN_PASSWORD` = a strong password
+   - `ADMIN_EMAIL`, `ADMIN_NAME`, `ADMIN_PASSWORD` = the first user (a strong password)
    - `SESSION_SECRET` = 32+ random characters (`openssl rand -hex 32`)
 3. Under Networking, generate a Railway domain.
 4. Load the starter data once, from your machine, against the database's public URL:

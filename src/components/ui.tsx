@@ -19,7 +19,7 @@ export function AsOfLine({ asOf }: { asOf: string | null }) {
 export function Masthead() {
   return (
     <header className="mx-auto max-w-5xl px-6 pt-10 pb-6">
-      <Link href="/areas" className="inline-block">
+      <Link href="/pipeline" className="inline-block">
         <h1 className="text-3xl font-semibold tracking-tight">PV Compass</h1>
       </Link>
       <p className="mt-1 text-[15px] text-muted">Inspection readiness for a PV system</p>
@@ -90,8 +90,75 @@ export function Code({ children }: { children: React.ReactNode }) {
   return <span className="font-mono text-[13px]">{children}</span>;
 }
 
-export function StatusTag({ status }: { status: "pending" | "approved" | "rejected" }) {
+export type CheckStatus = "draft" | "approved" | "retired";
+
+export function StatusTag({ status }: { status: CheckStatus }) {
   const tone =
-    status === "approved" ? "text-ink border-ink" : status === "rejected" ? "text-alert border-alert" : "text-muted border-rule";
+    status === "approved" ? "text-ink border-ink" : status === "retired" ? "text-faint border-rule line-through" : "text-muted border-rule";
   return <span className={`label inline-block border px-1.5 py-0.5 ${tone}`}>{status}</span>;
 }
+
+const REQUIRE_LABELS: Record<string, string> = {
+  sdea_partners: "has SDEA partners",
+  vendor_performed: "an area is vendor-performed",
+  rems: "holds a REMS",
+  armm: "has additional risk minimisation",
+  eu_qppv: "has an EU QPPV",
+  uk_qppv: "has a UK QPPV",
+  psmf: "holds a PSMF",
+  active_trials: "runs clinical trials",
+  local_pv_contacts: "has local PV contacts",
+  patient_programmes: "runs patient programmes",
+};
+
+type Applicability = { markets?: string[]; product_types?: string[]; requires?: string[] } | null;
+
+/** Plain-language form of a check's applicability predicates. */
+export function applicabilityText(a: Applicability): string {
+  if (!a) return "Any company";
+  const parts: string[] = [];
+  if (a.markets?.length) parts.push(`market in ${a.markets.join(", ")}`);
+  if (a.product_types?.length) parts.push(`product type ${a.product_types.join(" or ")}`);
+  for (const r of a.requires ?? []) parts.push(REQUIRE_LABELS[r] ?? r);
+  return parts.length ? parts.join(" · ") : "Any company";
+}
+
+/** Check facts shown in the library and review screens. */
+export function CheckFacts({
+  applicability,
+  inspectorEvidence,
+  crosswalks,
+}: {
+  applicability: Applicability;
+  inspectorEvidence: string[];
+  crosswalks: { citation: string; jurisdiction: string; regulationId: string | null }[];
+}) {
+  return (
+    <dl className="mt-2 grid grid-cols-[7.5rem_1fr] gap-x-3 gap-y-1 text-sm">
+      <dt className="label pt-0.5 text-faint">Applies when</dt>
+      <dd className="text-muted">{applicabilityText(applicability)}</dd>
+      <dt className="label pt-0.5 text-faint">Evidence</dt>
+      <dd className="text-muted">{inspectorEvidence.join("; ")}</dd>
+      <dt className="label pt-0.5 text-faint">Crosswalks</dt>
+      <dd className="flex flex-wrap gap-x-3 gap-y-1">
+        {crosswalks.map((x) =>
+          x.regulationId ? (
+            <Link
+              key={x.citation}
+              href={`/regulations/${encodeURIComponent(x.regulationId)}`}
+              className="text-muted underline-offset-4 hover:text-ink hover:underline"
+            >
+              <Code>{x.citation}</Code>
+            </Link>
+          ) : (
+            <span key={x.citation} className="text-muted">
+              <Code>{x.citation}</Code>
+            </span>
+          ),
+        )}
+      </dd>
+    </dl>
+  );
+}
+
+export const fmtTime = (d: Date) => `${d.toISOString().slice(0, 16).replace("T", " ")} UTC`;
