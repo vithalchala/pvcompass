@@ -3,7 +3,8 @@ import { mkdtemp, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { describe, it } from "node:test";
-import { readRegulationsFile } from "../src/db/regulations-file";
+import { existsSync } from "node:fs";
+import { readRegulationsFile, REGULATIONS_FILE } from "../src/db/regulations-file";
 
 async function fileWith(content: unknown) {
   const dir = await mkdtemp(path.join(tmpdir(), "pvc-"));
@@ -48,6 +49,19 @@ describe("readRegulationsFile", () => {
     assert.deepEqual(row.tags, []);
   });
 
+  it("accepts month-only and full dates, rejects impossible ones", async () => {
+    const ok = await readRegulationsFile(await fileWith([{ ...valid, as_of: "2026-09" }]));
+    assert.equal(ok[0].asOf, "2026-09");
+    for (const bad of ["2026-13", "2026-9", "2026-09-32", "2026"]) {
+      await assert.rejects(readRegulationsFile(await fileWith([{ ...valid, as_of: bad }])), /as_of must be/);
+    }
+  });
+
+  it("ignores fields it does not know, such as subsection", async () => {
+    const [row] = await readRegulationsFile(await fileWith([{ ...valid, subsection: "x" }]));
+    assert.ok(!("subsection" in row));
+  });
+
   it("rejects a file that is not an array", async () => {
     await assert.rejects(readRegulationsFile(await fileWith({ ...valid })), /expected a JSON array/);
   });
@@ -63,7 +77,7 @@ describe("readRegulationsFile", () => {
     ]);
     await assert.rejects(readRegulationsFile(file), (err: Error) => {
       for (const problem of [
-        "entry 0 (r1): as_of must be YYYY-MM-DD",
+        "entry 0 (r1): as_of must be YYYY-MM or YYYY-MM-DD",
         "entry 0 (r1): tags must be an array of strings",
         "entry 1 (r1): title must be a string",
         "entry 1 (r1): missing jurisdiction",
@@ -75,5 +89,12 @@ describe("readRegulationsFile", () => {
       }
       return true;
     });
+  });
+});
+
+describe("data/regulations.json", { skip: !existsSync(REGULATIONS_FILE) && "file not present" }, () => {
+  it("passes validation", async () => {
+    const rows = await readRegulationsFile();
+    assert.ok(rows.length > 0);
   });
 });

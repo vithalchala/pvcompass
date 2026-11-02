@@ -46,8 +46,6 @@ export async function getAreaTree(code: string) {
       check: checks,
       regulationId: checkRegulations.regulationId,
       title: regulations.title,
-      sourceLabel: regulations.sourceLabel,
-      section: regulations.section,
     })
     .from(checks)
     .innerJoin(subAreas, eq(subAreas.id, checks.subAreaId))
@@ -60,7 +58,7 @@ export async function getAreaTree(code: string) {
   const byCheck = new Map<number, typeof checks.$inferSelect & { regs: Ref[] }>();
   for (const r of rows) {
     const entry = byCheck.get(r.check.id) ?? { ...r.check, regs: [] };
-    if (r.regulationId && r.title) entry.regs.push({ id: r.regulationId, label: shortRef(r as RefFields) });
+    if (r.regulationId && r.title) entry.regs.push({ id: r.regulationId, label: shortRef({ title: r.title }) });
     byCheck.set(r.check.id, entry);
   }
   return subs.map((s) => ({
@@ -69,11 +67,9 @@ export async function getAreaTree(code: string) {
   }));
 }
 
-type RefFields = { title: string; sourceLabel: string | null; section: string | null };
-
-/** Compact citation, e.g. "GVP Module VI · VI.B.6", falling back to the title. */
-export function shortRef(r: RefFields) {
-  return [r.sourceLabel, r.section].filter(Boolean).join(" · ") || r.title;
+/** Short citation: the part of the title before " — ", e.g. "GVP Module VI". */
+export function shortRef(r: { title: string }) {
+  return r.title.split(" — ")[0];
 }
 
 /**
@@ -98,7 +94,7 @@ export async function searchRegulations(q: string, jurisdiction?: string) {
     .select()
     .from(regulations)
     .where(and(text, juris))
-    .orderBy(asc(regulations.jurisdiction), asc(regulations.title));
+    .orderBy(sql`${regulations.section} asc nulls last`, asc(regulations.title));
 }
 
 export async function listJurisdictions() {

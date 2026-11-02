@@ -8,7 +8,8 @@ export const REGULATIONS_FILE = path.join(process.cwd(), "data", "regulations.js
 
 export type RegulationRow = typeof schema.regulations.$inferInsert;
 
-const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+// YYYY-MM or YYYY-MM-DD.
+const AS_OF = /^\d{4}-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?$/;
 
 /**
  * Read and validate data/regulations.json. Throws with every problem listed,
@@ -57,7 +58,7 @@ export async function readRegulationsFile(file = REGULATIONS_FILE): Promise<Regu
       }
     }
 
-    if (asOf && !ISO_DATE.test(asOf)) errors.push(`${at}: as_of must be YYYY-MM-DD, got "${asOf}"`);
+    if (asOf && !AS_OF.test(asOf)) errors.push(`${at}: as_of must be YYYY-MM or YYYY-MM-DD, got "${asOf}"`);
     if (id && seen.has(id)) errors.push(`${at}: duplicate id`);
     if (id) seen.add(id);
 

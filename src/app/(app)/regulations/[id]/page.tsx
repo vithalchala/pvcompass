@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Code, NumberedItem, pad2, SectionLabel } from "@/components/ui";
-import { getRegulation, shortRef } from "@/lib/queries";
+import { getRegulation } from "@/lib/queries";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -28,7 +28,7 @@ export default async function RegulationPage({ params }: Props) {
       <Link href="/regulations" className="label text-muted hover:text-ink">← Regulations</Link>
       <div className="mt-4 mb-10">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <Code>{reg.sourceLabel || reg.section ? shortRef(reg) : reg.jurisdiction}</Code>
+          <Code>{reg.section ?? reg.jurisdiction}</Code>
           <span className="font-mono text-xs text-muted">as of {reg.asOf}</span>
         </div>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight">{reg.title}</h2>
@@ -45,7 +45,7 @@ export default async function RegulationPage({ params }: Props) {
           <dt className="label pt-0.5 text-muted">Source</dt>
           <dd>{reg.sourceLabel ?? <span className="text-muted">—</span>}</dd>
           <dt className="label pt-0.5 text-muted">Section</dt>
-          <dd>{reg.section ? <Code>{reg.section}</Code> : <span className="text-muted">—</span>}</dd>
+          <dd>{reg.section ?? <span className="text-muted">—</span>}</dd>
           <dt className="label pt-0.5 text-muted">Jurisdiction</dt>
           <dd>{reg.jurisdiction}</dd>
           <dt className="label pt-0.5 text-muted">As of</dt>

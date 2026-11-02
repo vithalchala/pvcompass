@@ -77,10 +77,12 @@ Regulations come only from `data/regulations.json`: a JSON array of objects with
 | `title`        | string           | yes      |
 | `jurisdiction` | string           | yes      |
 | `summary`      | string           | yes      |
-| `as_of`        | `YYYY-MM-DD`     | yes      |
+| `as_of`        | `YYYY-MM` or `YYYY-MM-DD` | yes |
 | `section`      | string or null   | no       |
 | `source_label` | string or null   | no       |
 | `tags`         | array of strings | no       |
+
+Other fields (such as `subsection`) are ignored. The list is ordered by `section`, then title.
 
 After editing the file, reload just the regulations (review status on checks is kept):
 
@@ -94,7 +96,7 @@ the newest `as_of`. Search is plain substring matching over id, title, summary, 
 label and tags. No AI is involved.
 
 The areas and checks in `src/db/seed-data.ts` are an illustrative starter set (12 areas,
-48 checks). A check links to a regulation only when its id exists in the JSON file; the seed
+48 checks). Their citations point at ids in the current `data/regulations.json`; a check links to a regulation only when its id exists in the JSON file; the seed
 reports how many links it skipped. `npm run db:seed` wipes review status.
 
 ## 4. Run

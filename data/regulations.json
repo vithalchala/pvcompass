@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "ich-e2a-clinical-safety-data-management",
+    "title": "ICH E2A — Clinical Safety Data Management",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Defines standards and terminology for expedited ICSR reporting during clinical development. Establishes core definitions of 'serious', 'unexpected', and 'adverse drug reaction'. Primary reference for SUSAR reporting timelines (7-day/15-day) and causality assessment criteria.",
+    "tags": [
+      "Adverse event definitions",
+      "Expedited reporting",
+      "SUSAR",
+      "7-day",
+      "15-day"
+    ],
+    "source_label": "ICH E2A Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e2b-r3-electronic-transmission-of-icsrs",
+    "title": "ICH E2B(R3) — Electronic Transmission of ICSRs",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Defines the HL7/XML data element structure and format for electronic ICSR submissions to regulatory authorities. E2B(R3) is the current mandatory format for EudraVigilance (EU), PMDA (Japan), and increasingly FDA.",
+    "tags": [
+      "XML/HL7",
+      "ICSR format",
+      "EudraVigilance",
+      "VigiBase",
+      "E2B(R3)"
+    ],
+    "source_label": "ICH E2B(R3) Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e2c-r2-periodic-benefit-risk-evaluation-report-pbrer",
+    "title": "ICH E2C(R2) — Periodic Benefit-Risk Evaluation Report (PBRER)",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Establishes the harmonized format for periodic safety reporting for approved marketed products — the PBRER/PSUR. Defines International Birth Date (IBD), Data Lock Point (DLP), and submission timelines.",
+    "tags": [
+      "PBRER",
+      "PSUR",
+      "IBD",
+      "DLP",
+      "Periodic reporting",
+      "Benefit-risk"
+    ],
+    "source_label": "ICH E2C(R2) Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e2d-post-approval-safety-data-management",
+    "title": "ICH E2D — Post-Approval Safety Data Management",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Defines adverse event reporting obligations for marketed products including expedited 15-day and periodic reporting. Provides the regulatory basis for post-marketing ICSR definitions, spontaneous reporting, literature monitoring, and solicited reports.",
+    "tags": [
+      "Post-marketing",
+      "Literature monitoring",
+      "Solicited reports",
+      "15-day"
+    ],
+    "source_label": "ICH E2D Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e2e-pharmacovigilance-planning",
+    "title": "ICH E2E — Pharmacovigilance Planning",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Framework for proactive pharmacovigilance at the time of regulatory approval including risk management planning and signal detection planning. Forms the regulatory basis for the EU RMP and FDA REMS.",
+    "tags": [
+      "Risk Management Plan",
+      "Signal detection",
+      "RMP",
+      "Safety specification"
+    ],
+    "source_label": "ICH E2E Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e2f-development-safety-update-report-dsur",
+    "title": "ICH E2F — Development Safety Update Report (DSUR)",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Defines the format and content of the annual safety report for investigational medicinal products during clinical development. Replaces FDA IND Annual Report safety sections and aligns with EU CTA annual requirements.",
+    "tags": [
+      "DSUR",
+      "Annual report",
+      "Clinical trials",
+      "IND",
+      "Development safety"
+    ],
+    "source_label": "ICH E2F Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e6-r2-r3-good-clinical-practice-gcp",
+    "title": "ICH E6(R2/R3) — Good Clinical Practice (GCP)",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Governs sponsor obligations for AE/SAE reporting, investigator safety reporting, DSMBs, and trial master file requirements. E2B-compliant SAE data structures apply under GCP.",
+    "tags": [
+      "GCP",
+      "SAE reporting",
+      "Sponsor obligations",
+      "DSMB"
+    ],
+    "source_label": "ICH E6(R2) Guideline · E6(R3) Draft",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ich-e8-r1-general-considerations-for-clinical-studies",
+    "title": "ICH E8(R1) — General Considerations for Clinical Studies",
+    "section": "1. ICH Harmonized Guidelines (Global)",
+    "subsection": "",
+    "jurisdiction": "ICH",
+    "summary": "Updated guideline integrating quality-by-design principles into trial design; includes risk-proportionate approaches to safety data collection and monitoring that affect PV obligations during development.",
+    "tags": [
+      "Trial design",
+      "Risk-proportionate",
+      "Safety data collection"
+    ],
+    "source_label": "ICH E8(R1) Guideline",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-312-ind-safety-reporting",
+    "title": "21 CFR Part 312 — IND Safety Reporting",
+    "section": "2. United States — FDA",
+    "subsection": "2.1 Clinical / Investigational Stage",
+    "jurisdiction": "FDA",
+    "summary": "Governs IND safety reporting obligations. Section 312.32 requires 7-day fatal/life-threatening SUSAR reports and 15-day reports for serious unexpected ADRs. Section 312.33 requires annual progress reports (DSUR equivalent). Section 312.32(c)(1)(ii) governs co-sponsor SUSAR obligations.",
+    "tags": [
+      "IND",
+      "SUSAR",
+      "7-day",
+      "15-day",
+      "Annual report",
+      "Co-sponsor"
+    ],
+    "source_label": "21 CFR 312 (eCFR) · FDA IND Safety Reporting Guidance (2015)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-314-nda-post-marketing-safety-reporting",
+    "title": "21 CFR Part 314 — NDA Post-Marketing Safety Reporting",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Section 314.81 governs post-marketing safety reporting for NDA holders: 15-day alert reports, PADERs (Periodic Adverse Drug Experience Reports), and Field Alert Reports (314.81(b)(1)).",
+    "tags": [
+      "NDA",
+      "PADER",
+      "15-day alert",
+      "Field Alert Reports"
+    ],
+    "source_label": "21 CFR 314 (eCFR)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-601-bla-post-marketing-safety-reporting",
+    "title": "21 CFR Part 601 — BLA Post-Marketing Safety Reporting",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Governs post-marketing safety reporting for biologics. Section 600.80 covers adverse experience reporting including 15-day expedited reports and periodic reporting. Section 600.81 covers distribution reporting.",
+    "tags": [
+      "BLA",
+      "Biologics",
+      "15-day reporting",
+      "Periodic reports"
+    ],
+    "source_label": "21 CFR 600 (eCFR)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-314-81-b-1-field-alert-reports-fars",
+    "title": "21 CFR 314.81(b)(1) — Field Alert Reports (FARs)",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Requires NDA holders to submit Field Alert Reports within 3 days for product quality, safety, or labeling issues: contamination, chemical/physical change, product mix-up, or labeling issues. Critical for CMO oversight.",
+    "tags": [
+      "FARs",
+      "Product quality",
+      "Contamination",
+      "CMO",
+      "3-day"
+    ],
+    "source_label": "21 CFR 314.81 (eCFR) · FDA FAR Guidance",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "rems-21-cfr-505-1-fdaaa-505-1-risk-evaluation-and-mitigation-strategies",
+    "title": "REMS (21 CFR 505-1 / FDAAA §505-1) — Risk Evaluation and Mitigation Strategies",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Mandates risk minimization programs for high-risk drugs including Medication Guides, Communication Plans, and Elements to Assure Safe Use (ETASU). MAHs must implement, monitor, and assess REMS effectiveness.",
+    "tags": [
+      "REMS",
+      "ETASU",
+      "Risk minimization",
+      "Medication Guide",
+      "High-risk"
+    ],
+    "source_label": "FDA REMS Guidance · 21 CFR 505-1",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-4-combination-products",
+    "title": "21 CFR Part 4 — Combination Products",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Governs classification and regulatory pathway for drug-device-biologic combinations. PV obligations follow the primary mode of action; both drug and device reporting frameworks may apply simultaneously.",
+    "tags": [
+      "Combination products",
+      "Drug-device",
+      "PMOA"
+    ],
+    "source_label": "21 CFR Part 4 (eCFR) · FDA Combination Products",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-11-electronic-records-and-electronic-signatures",
+    "title": "21 CFR Part 11 — Electronic Records and Electronic Signatures",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Governs use of electronic records and e-signatures in FDA-regulated activities. Directly applicable to PV safety databases, audit trail requirements, and validated system controls. Critical for BIMO inspection readiness.",
+    "tags": [
+      "Electronic records",
+      "Audit trail",
+      "e-signatures",
+      "Safety databases",
+      "BIMO"
+    ],
+    "source_label": "21 CFR Part 11 (eCFR) · FDA Part 11 Guidance",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-211-cgmp-for-finished-pharmaceuticals",
+    "title": "21 CFR Part 211 — cGMP for Finished Pharmaceuticals",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Intersects PV through product quality complaints, OOS investigations, and manufacturing deviations that generate or substantiate safety signals. CMO-reported issues may trigger PV obligations.",
+    "tags": [
+      "cGMP",
+      "OOS",
+      "Product complaints",
+      "Manufacturing deviations",
+      "CMO"
+    ],
+    "source_label": "21 CFR Part 211 (eCFR)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "fdaaa-2007-sentinel-initiative-postmarketing-safety-provisions",
+    "title": "FDAAA 2007 / Sentinel Initiative — Postmarketing Safety Provisions",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Establishes FDA authority to require post-marketing studies, mandate REMS, and require label changes. Established the Sentinel Initiative for active drug safety surveillance using large US healthcare databases.",
+    "tags": [
+      "FDAAA",
+      "Postmarketing studies",
+      "Sentinel",
+      "Active surveillance",
+      "Label changes"
+    ],
+    "source_label": "FDAAA 2007 (Congress.gov) · FDA Sentinel Initiative",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "medwatch-faers-fda-safety-reporting-adverse-event-database",
+    "title": "MedWatch / FAERS — FDA Safety Reporting & Adverse Event Database",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "MedWatch (Form 3500A) is the mandatory ICSR reporting system. All data flows into FAERS — the national PV database used for signal detection (disproportionality analysis). Public access via openFDA API.",
+    "tags": [
+      "MedWatch",
+      "FAERS",
+      "Signal detection",
+      "PRR",
+      "ROR",
+      "openFDA"
+    ],
+    "source_label": "MedWatch Portal · FAERS Database · openFDA API",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "vaers-vaccine-adverse-event-reporting-system",
+    "title": "VAERS — Vaccine Adverse Event Reporting System",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Joint FDA/CDC passive surveillance system for vaccine adverse events. Mandatory reporting for healthcare providers and vaccine manufacturers. Data used by CDC ACIP and FDA VRBPAC for benefit-risk assessments.",
+    "tags": [
+      "VAERS",
+      "Vaccines",
+      "CDC",
+      "ACIP",
+      "Passive surveillance"
+    ],
+    "source_label": "VAERS Website · VAERS Data",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "bimo-bioresearch-monitoring-program",
+    "title": "BIMO — Bioresearch Monitoring Program",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "FDA's inspectional authority covering clinical investigators, IRBs, sponsors, and CROs. Audits ICSR quality, SUSAR reporting timeliness, IND annual report accuracy, and safety data reconciliation.",
+    "tags": [
+      "BIMO",
+      "FDA inspection",
+      "CRO",
+      "IRB",
+      "Sponsor",
+      "Inspection readiness"
+    ],
+    "source_label": "FDA BIMO Program",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "fda-rwe-framework-2018-2023-real-world-evidence-for-post-market-safety",
+    "title": "FDA RWE Framework (2018/2023) — Real World Evidence for Post-Market Safety",
+    "section": "2. United States — FDA",
+    "subsection": "2.2 Post-Marketing / Approved Products",
+    "jurisdiction": "FDA",
+    "summary": "Guidance on using real world data and RWE for post-marketing safety decisions, label updates, and PMC/PMR fulfillment. Sentinel System study protocols are the primary RWD application for post-marketing safety.",
+    "tags": [
+      "RWE",
+      "RWD",
+      "Sentinel",
+      "Post-marketing commitments",
+      "Label update"
+    ],
+    "source_label": "FDA RWE Framework · RWE Guidance (2023)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "regulation-eu-no-1235-2010-directive-2010-84-eu-eu-pv-legislation",
+    "title": "Regulation (EU) No 1235/2010 + Directive 2010/84/EU — EU PV Legislation",
+    "section": "3. European Union — EMA",
+    "subsection": "3.1 Core Legislation",
+    "jurisdiction": "EMA",
+    "summary": "Overarching EU PV legislative framework. Establishes EMA's PRAC, defines MAH obligations, mandates the QPPV role, requires the PSMF, and establishes the GVP framework. All EU MAHs must comply.",
+    "tags": [
+      "EU PV legislation",
+      "PRAC",
+      "QPPV",
+      "MAH obligations",
+      "GVP",
+      "PSMF"
+    ],
+    "source_label": "Regulation 1235/2010 (EUR-Lex) · Directive 2010/84/EU (EUR-Lex)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "regulation-eu-726-2004-centralized-procedure-and-ema-powers",
+    "title": "Regulation (EU) 726/2004 — Centralized Procedure and EMA Powers",
+    "section": "3. European Union — EMA",
+    "subsection": "3.1 Core Legislation",
+    "jurisdiction": "EMA",
+    "summary": "Governs the centralized marketing authorization procedure and EMA's post-marketing powers including urgency procedures, referrals, and suspension of MA. PRAC recommendations carry direct PV enforcement authority.",
+    "tags": [
+      "Centralized MA",
+      "Referral",
+      "Urgency procedure",
+      "PRAC",
+      "MA suspension"
+    ],
+    "source_label": "Regulation 726/2004 (EUR-Lex)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-i-pharmacovigilance-systems-and-quality-systems",
+    "title": "GVP Module I — Pharmacovigilance Systems and Quality Systems",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Defines MAH requirements for PV quality system: quality management, SOPs, training, audits, PSMF, and QPPV oversight. Mandates minimum SDEA content.",
+    "tags": [
+      "PV quality system",
+      "PSMF",
+      "QPPV",
+      "SOPs",
+      "SDEAs",
+      "Audits"
+    ],
+    "source_label": "GVP Module I (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-ii-pharmacovigilance-system-master-file-psmf",
+    "title": "GVP Module II — Pharmacovigilance System Master File (PSMF)",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Detailed requirements for the PSMF including mandatory content, update frequency, inspection access, and QPPV certification. The PSMF is an inspectable document.",
+    "tags": [
+      "PSMF",
+      "Inspection",
+      "QPPV certificate",
+      "MAH obligation"
+    ],
+    "source_label": "GVP Module II (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-iii-pharmacovigilance-inspections",
+    "title": "GVP Module III — Pharmacovigilance Inspections",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Framework for NCA and EMA inspections of MAH PV systems. Covers pre-inspection, on-site, and post-inspection phases; critical findings definitions; and CAPA requirements.",
+    "tags": [
+      "PV inspections",
+      "NCA",
+      "EMA",
+      "CAPA",
+      "Critical findings"
+    ],
+    "source_label": "GVP Module III (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-iv-pharmacovigilance-audits",
+    "title": "GVP Module IV — Pharmacovigilance Audits",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Requirements for routine and triggered PV system audits by MAHs. Minimum every 2 years; auditor independence; audit report content; outputs feed into PSMF.",
+    "tags": [
+      "PV audits",
+      "Internal audit",
+      "Audit frequency",
+      "PSMF update"
+    ],
+    "source_label": "GVP Module IV (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-v-risk-management-systems",
+    "title": "GVP Module V — Risk Management Systems",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Defines the structure and content of the EU Risk Management Plan (RMP). Covers safety specification, pharmacovigilance plan, risk minimization, and additional risk minimization measures (aRMM). Required at MA and updated at each renewal/variation.",
+    "tags": [
+      "RMP",
+      "Safety specification",
+      "Risk minimization",
+      "aRMM",
+      "PASS",
+      "PAES"
+    ],
+    "source_label": "GVP Module V (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-vi-collection-management-and-submission-of-adrs",
+    "title": "GVP Module VI — Collection, Management and Submission of ADRs",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Governs ICSR collection, processing, and submission timelines to EudraVigilance. Defines seriousness, expectedness, causality, and electronic transmission in E2B(R3). Core operational PV module.",
+    "tags": [
+      "ICSR",
+      "EudraVigilance",
+      "E2B(R3)",
+      "Seriousness",
+      "15-day",
+      "90-day"
+    ],
+    "source_label": "GVP Module VI (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-vii-periodic-safety-update-reports",
+    "title": "GVP Module VII — Periodic Safety Update Reports",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Defines PSUR/PBRER format, content, and submission timelines for EU MA holders. Covers PSUR work-sharing procedure. PRAC assesses PBRERs and may issue recommendations impacting MA.",
+    "tags": [
+      "PSUR",
+      "PBRER",
+      "Work-sharing",
+      "PRAC assessment",
+      "IBD"
+    ],
+    "source_label": "GVP Module VII (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-viii-viii-a-post-authorisation-safety-efficacy-studies",
+    "title": "GVP Module VIII / VIII(a) — Post-Authorisation Safety & Efficacy Studies",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Module VIII governs design, conduct, and reporting of non-interventional PASS. Module VIII(a) covers PAES required as MA conditions. PASS protocol must be submitted to EMA/PRAC via ENCEPP.",
+    "tags": [
+      "PASS",
+      "PAES",
+      "ENCEPP",
+      "Non-interventional",
+      "Protocol review",
+      "PRAC"
+    ],
+    "source_label": "GVP Module VIII (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-module-ix-signal-management",
+    "title": "GVP Module IX — Signal Management",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Defines the EU signal management process: detection in EVDAS, validation, prioritization, assessment, and PRAC review. MAHs must monitor PRAC signals quarterly.",
+    "tags": [
+      "Signal management",
+      "EVDAS",
+      "PRAC signals",
+      "Quarterly monitoring"
+    ],
+    "source_label": "GVP Module IX (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-modules-x-xvi-additional-monitoring-through-risk-minimisation-effectiveness",
+    "title": "GVP Modules X–XVI — Additional Monitoring through Risk Minimisation Effectiveness",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Module X: Additional Monitoring (▼ symbol). Module XI: Public participation. Module XII: Continuous benefit-risk. Module XIII: Incident management. Module XIV: International collaboration. Module XV: Safety communications (DHPC). Module XVI: Risk minimization effectiveness evaluation.",
+    "tags": [
+      "Additional monitoring",
+      "DHPC",
+      "Benefit-risk",
+      "Incident management",
+      "aRMM effectiveness"
+    ],
+    "source_label": "GVP All Modules (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gvp-product-population-addenda-vaccines-add-i-biologicals-add-ii-paediatrics-add",
+    "title": "GVP Product/Population Addenda — Vaccines (Add. I), Biologicals (Add. II), Paediatrics (Add. III)",
+    "section": "3. European Union — EMA",
+    "subsection": "3.2 Good Pharmacovigilance Practice (GVP) Modules",
+    "jurisdiction": "EMA",
+    "summary": "Addendum I covers vaccine PV specifics. Addendum II covers biologicals/biosimilars immunogenicity. Addendum III covers paediatric PV obligations under PUMA.",
+    "tags": [
+      "Vaccines",
+      "Biologicals",
+      "Paediatrics",
+      "Immunogenicity",
+      "PUMA"
+    ],
+    "source_label": "GVP Addenda (EMA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "eudravigilance-evdas-eu-central-icsr-database",
+    "title": "EudraVigilance / EVDAS — EU Central ICSR Database",
+    "section": "3. European Union — EMA",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "EMA",
+    "summary": "EMA's central database for ADR reports. MAHs submit ICSRs in E2B(R3) format. EVDAS is used by EMA/PRAC and MAHs for signal detection. Direct access available to MAHs.",
+    "tags": [
+      "EudraVigilance",
+      "EVDAS",
+      "ICSR submission",
+      "Signal detection"
+    ],
+    "source_label": "EudraVigilance (EMA) · EVDAS Access",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "eu-ctr-regulation-536-2014-clinical-trial-regulation",
+    "title": "EU CTR / Regulation 536/2014 — Clinical Trial Regulation",
+    "section": "3. European Union — EMA",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "EMA",
+    "summary": "Electronic SUSAR reporting through the CTIS portal. Sponsors submit SUSARs within 7/15 days. Annual DSUR required for ongoing EU trials. Supersedes Directive 2001/20/EC.",
+    "tags": [
+      "EU CTR",
+      "CTIS",
+      "SUSAR",
+      "DSUR",
+      "Clinical trials"
+    ],
+    "source_label": "EU CTR (EUR-Lex) · CTIS Portal",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "japan-pmda-mhlw-ministerial-ordinance-171-gpsp-gvsp-japan-pv-framework",
+    "title": "Japan — PMDA/MHLW (Ministerial Ordinance 171 / GPSP / GVSP) — Japan PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Japan's core PV framework: Ministerial Ordinance 171 governs ICSR collection and reporting to PMDA; GPSP governs post-marketing clinical studies; GVSP governs MAH PV system requirements. Re-examination periods (4–10 years) require active data collection.",
+    "tags": [
+      "PMDA",
+      "GPSP",
+      "GVSP",
+      "J-ICSR",
+      "JADER",
+      "Re-examination"
+    ],
+    "source_label": "PMDA Guidelines · PMDA Safety Info",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "canada-health-canada-food-and-drug-regulations-part-c-div-8-canada-pv-framework",
+    "title": "Canada — Health Canada (Food and Drug Regulations Part C, Div. 8) — Canada PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Requires MAHs to submit serious ADR reports within 15 days and non-serious ADRs within 90 days. Summary safety and efficacy reports (PSUR equivalent) submitted at defined intervals. Canada Vigilance program collects all reports.",
+    "tags": [
+      "Canada Vigilance",
+      "PSUR",
+      "15-day reporting",
+      "Health Canada"
+    ],
+    "source_label": "Canada Vigilance Program · Health Canada PV Guidance",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "australia-tga-therapeutic-goods-act-1989-australia-pv-framework",
+    "title": "Australia — TGA (Therapeutic Goods Act 1989) — Australia PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Mandatory 15-day reporting for serious unexpected events. PSUR submission required at MA renewal and on request. RMP required for new chemical entities and high-risk products. DAEN is the national ADR database.",
+    "tags": [
+      "TGA",
+      "DAEN",
+      "PSUR",
+      "RMP",
+      "15-day reporting"
+    ],
+    "source_label": "TGA Pharmacovigilance · DAEN Database",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "china-nmpa-china-gvp-2021-china-pv-framework",
+    "title": "China — NMPA (China GVP 2021) — China PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Comprehensive PV framework effective 2021. Requires PV department, designated PV officer, SOP library. ADR reporting within 15 days (serious)/30 days (non-serious). PSUR at 5-year MA renewal intervals.",
+    "tags": [
+      "China GVP",
+      "NMPA",
+      "ADR reporting",
+      "PSUR",
+      "PV officer"
+    ],
+    "source_label": "China GVP (NMPA)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "india-cdsco-schedule-y-new-drugs-clinical-trials-rules-2019-india-pv-framework",
+    "title": "India — CDSCO (Schedule Y + New Drugs & Clinical Trials Rules 2019) — India PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Schedule Y governs PV reporting. PvPI is the national PV network. PSUR submissions every 6 months for the first 2 years, then annually. Serious unexpected ADRs require 15-day expedited reporting.",
+    "tags": [
+      "CDSCO",
+      "PvPI",
+      "Schedule Y",
+      "PSUR",
+      "New Drugs Rules 2019"
+    ],
+    "source_label": "CDSCO PV Portal · PvPI",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "brazil-anvisa-rdc-204-2017-brazil-pv-framework",
+    "title": "Brazil — ANVISA (RDC 204/2017) — Brazil PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Mandates PV system documentation, written procedures, and designated PV officer. Serious AE reports submitted to NOTIVISA within 15 days. RPPS is the PSUR equivalent.",
+    "tags": [
+      "ANVISA",
+      "NOTIVISA",
+      "RPPS",
+      "RDC 204",
+      "15-day"
+    ],
+    "source_label": "ANVISA PV Portal · NOTIVISA",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "south-korea-mfds-gvp-notice-pharmaceutical-affairs-act-south-korea-pv-framework",
+    "title": "South Korea — MFDS (GVP Notice + Pharmaceutical Affairs Act) — South Korea PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "ICSRs submitted to KAERS. PSUR submissions aligned with ICH E2C(R2). Re-examination period (4–6 years) requires active PV data collection.",
+    "tags": [
+      "MFDS",
+      "KAERS",
+      "PSUR",
+      "Re-examination",
+      "Korea GVP"
+    ],
+    "source_label": "MFDS PV Info · KAERS",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "gcc-harmonized-pv-guidelines-sfda-led-gulf-cooperation-council-pv-framework",
+    "title": "GCC Harmonized PV Guidelines (SFDA-led) — Gulf Cooperation Council PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Harmonized framework across Saudi Arabia, UAE, Qatar, Kuwait, Bahrain, and Oman. ICSR submission to national ADR databases. PSUR timelines aligned regionally. Local PV contact required in each member state.",
+    "tags": [
+      "GCC",
+      "SFDA",
+      "UAE",
+      "Qatar",
+      "PSUR",
+      "Local PV contact"
+    ],
+    "source_label": "SFDA PV · UAE MOHAP PV",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "asean-harmonized-technical-requirements-asean-pv-framework",
+    "title": "ASEAN Harmonized Technical Requirements — ASEAN PV Framework",
+    "section": "4. Rest of World — Key Jurisdictions",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "ROW",
+    "summary": "Harmonized PV requirements across 10 ASEAN markets. PSUR submission, ICSR reporting, and RMP requirements vary by member state but reference ICH standards. Singapore HSA and Thailand FDA are most ICH-aligned.",
+    "tags": [
+      "ASEAN",
+      "HSA Singapore",
+      "Thailand FDA",
+      "Indonesia BPOM",
+      "Philippines FDA"
+    ],
+    "source_label": "ASEAN Pharmaceutical · HSA Singapore PV",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "cioms-working-group-reports-and-who-frameworks-are-authoritative-scientific-refe",
+    "title": "CIOMS working group reports and WHO frameworks are authoritative scientific references cited in FDA and EMA guidance documents and used as standards in regulatory inspections and causality assessments.",
+    "section": "5. CIOMS / WHO International Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "CIOMS/WHO",
+    "summary": "CIOMS I — International Reporting of Adverse Drug Reactions (1990)",
+    "tags": [
+      "CIOMS form",
+      "Causality assessment",
+      "ICSR"
+    ],
+    "source_label": "CIOMS Publications",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "cioms-ii-vii-psur-ccds-benefit-risk-clinical-trial-safety-dsur",
+    "title": "CIOMS II–VII — PSUR / CCDS / Benefit-Risk / Clinical Trial Safety / DSUR",
+    "section": "5. CIOMS / WHO International Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "CIOMS/WHO",
+    "summary": "CIOMS II: Prototype PSUR format (precursor to ICH E2C). CIOMS III: CCSI/CCDS framework (reference safety information). CIOMS IV: Benefit-risk methodology. CIOMS VI: Clinical trial safety management. CIOMS VII: DSUR framework (precursor to ICH E2F).",
+    "tags": [
+      "PSUR",
+      "CCDS",
+      "CCSI",
+      "Benefit-risk",
+      "DSUR",
+      "Clinical trial safety"
+    ],
+    "source_label": "CIOMS All Publications",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "cioms-viii-signal-detection-methodologies-2010",
+    "title": "CIOMS VIII — Signal Detection Methodologies (2010)",
+    "section": "5. CIOMS / WHO International Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "CIOMS/WHO",
+    "summary": "Defines quantitative signal detection methods: PRR (Proportional Reporting Ratio), ROR (Reporting Odds Ratio), BCPNN (Bayesian Confidence Propagation Neural Network), and MGPS. Referenced in FDA signal detection guidance and EMA EVDAS methodology.",
+    "tags": [
+      "Signal detection",
+      "PRR",
+      "ROR",
+      "BCPNN",
+      "MGPS",
+      "Disproportionality"
+    ],
+    "source_label": "CIOMS VIII Report",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "who-umc-causality-assessment-vigibase-who-global-pv-framework",
+    "title": "WHO-UMC Causality Assessment + VigiBase — WHO Global PV Framework",
+    "section": "5. CIOMS / WHO International Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "CIOMS/WHO",
+    "summary": "WHO-UMC causality scale (Certain/Probable/Possible/Unlikely) used by national PV centers globally. VigiBase is WHO's global ICSR repository with 140+ contributing countries. Used for international signal detection and trend analysis.",
+    "tags": [
+      "WHO-UMC",
+      "Causality",
+      "VigiBase",
+      "VigiFlow",
+      "International ADR"
+    ],
+    "source_label": "Uppsala Monitoring Centre · VigiAccess (Public) · VigiBase",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "pic-s-gvp-guidelines-pharmaceutical-inspection-co-operation-scheme",
+    "title": "PIC/S GVP Guidelines — Pharmaceutical Inspection Co-operation Scheme",
+    "section": "5. CIOMS / WHO International Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "CIOMS/WHO",
+    "summary": "PIC/S adopts harmonized GVP standards used in Switzerland (Swissmedic), Singapore (HSA), Israel, New Zealand, and other PIC/S member states. PV inspections in these countries reference PIC/S guidance.",
+    "tags": [
+      "PIC/S",
+      "Swissmedic",
+      "HSA",
+      "New Zealand",
+      "Inspection"
+    ],
+    "source_label": "PIC/S Guidelines",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "radiopharmaceuticals-21-cfr-part-361-ema-guideline-radiopharmaceutical-pv",
+    "title": "Radiopharmaceuticals — 21 CFR Part 361 / EMA Guideline — Radiopharmaceutical PV",
+    "section": "6. Product-Specific Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Product-specific",
+    "summary": "US: 21 CFR 361.1 governs specific IND/NDA requirements; NRC overlaps on radiation safety. Standard NDA/BLA post-marketing PV obligations apply to approved diagnostic radiopharmaceuticals. EU: EMA guideline covers specific safety reporting, dosimetry data in PV assessments.",
+    "tags": [
+      "Radiopharmaceuticals",
+      "21 CFR 361",
+      "NRC",
+      "Dosimetry",
+      "PYLARIFY",
+      "DEFINITY"
+    ],
+    "source_label": "21 CFR 361 (eCFR) · EMA Radiopharmaceuticals · NRC Drug Oversight",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "biologics-biosimilars-21-cfr-600-601-ema-regulation-726-2004-biologics-pv",
+    "title": "Biologics/Biosimilars — 21 CFR 600–601 + EMA Regulation 726/2004 — Biologics PV",
+    "section": "6. Product-Specific Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Product-specific",
+    "summary": "Enhanced PV obligations including immunogenicity monitoring, batch surveillance, and comparability data post-approval. Biosimilars require extrapolation of safety data and post-marketing immunogenicity studies.",
+    "tags": [
+      "BLA",
+      "Biologics",
+      "Biosimilars",
+      "Immunogenicity",
+      "Batch surveillance"
+    ],
+    "source_label": "FDA Biologics PV · EMA Biosimilars",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "medical-devices-21-cfr-part-803-eu-mdr-2017-745-device-vigilance",
+    "title": "Medical Devices — 21 CFR Part 803 + EU MDR 2017/745 — Device Vigilance",
+    "section": "6. Product-Specific Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Product-specific",
+    "summary": "FDA MDR under 21 CFR 803 requires reporting of deaths and serious injuries within 30 days (5 days for certain events). EU MDR 2017/745 requires serious incident reports to national competent authorities.",
+    "tags": [
+      "MDR",
+      "Device vigilance",
+      "EU MDR",
+      "Combination products",
+      "Serious incidents"
+    ],
+    "source_label": "21 CFR Part 803 (eCFR) · EU MDR 2017/745",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "atmps-eu-regulation-1394-2007-advanced-therapy-medicinal-products-pv",
+    "title": "ATMPs — EU Regulation 1394/2007 — Advanced Therapy Medicinal Products PV",
+    "section": "6. Product-Specific Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Product-specific",
+    "summary": "ATMPs have 30-year record retention obligations, specific patient traceability requirements, and tailored PASS mandates. PRAC applies increased post-authorization oversight. FDA gene therapy IND/BLA requirements apply in the US.",
+    "tags": [
+      "ATMP",
+      "Gene therapy",
+      "Cell therapy",
+      "Traceability",
+      "PASS",
+      "30-year retention"
+    ],
+    "source_label": "EU ATMP Regulation (EUR-Lex) · EMA ATMPs · FDA Gene Therapy Guidance",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "vaccines-gvp-add-i-21-cfr-part-600-vaers-vaccine-pv",
+    "title": "Vaccines — GVP Add. I + 21 CFR Part 600 + VAERS — Vaccine PV",
+    "section": "6. Product-Specific Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Product-specific",
+    "summary": "Enhanced passive surveillance via VAERS (US) and EudraVigilance vaccine-specific reporting; active surveillance via VSD (Vaccine Safety Datalink). Benefit-risk assessed in public health context. Batch release PV data required.",
+    "tags": [
+      "Vaccines",
+      "VAERS",
+      "VSD",
+      "Batch surveillance",
+      "Public health",
+      "ENCEPP"
+    ],
+    "source_label": "FDA Vaccine Safety · CDC VSD",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "fda-ai-ml-guidance-2023-ai-ml-in-pv-workflows",
+    "title": "FDA AI/ML Guidance (2023) — AI/ML in PV Workflows",
+    "section": "7. Emerging and Digital Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Emerging",
+    "summary": "FDA guidance on AI tools in drug development and post-marketing contexts including AI-assisted ICSR processing, signal detection, and NLP of literature. Relevant for validated PV tools using AI/ML components.",
+    "tags": [
+      "AI",
+      "ML",
+      "ICSR automation",
+      "Signal detection",
+      "NLP",
+      "Validated systems"
+    ],
+    "source_label": "FDA AI/ML Action Plan · FDA AI Framework",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "ema-ai-strategy-eu-digital-health-act-eu-digital-pv",
+    "title": "EMA AI Strategy / EU Digital Health Act — EU Digital PV",
+    "section": "7. Emerging and Digital Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Emerging",
+    "summary": "EMA's evolving obligations for AI-assisted signal detection, digital biomarker data in PV submissions, and integration of EHR data into pharmacoepidemiology studies. EU Digital Health Act creates new data governance frameworks affecting PV data flows.",
+    "tags": [
+      "EMA AI strategy",
+      "Digital health",
+      "AI signal detection",
+      "EHR",
+      "Pharmacoepidemiology"
+    ],
+    "source_label": "EMA Digital Strategy · EU Digital Health Act",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "21-cfr-part-11-ema-annex-11-electronic-system-validation-for-pv",
+    "title": "21 CFR Part 11 + EMA Annex 11 — Electronic System Validation for PV",
+    "section": "7. Emerging and Digital Pharmacovigilance Regulations",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Emerging",
+    "summary": "FDA Part 11 and EMA Annex 11 govern computerized system validation for PV software (safety databases, signal tools, MedDRA coding tools). Audit trails, access controls, and data integrity requirements are inspectable in BIMO and EU PV inspections.",
+    "tags": [
+      "System validation",
+      "21 CFR 11",
+      "Annex 11",
+      "Audit trail",
+      "Safety database",
+      "BIMO"
+    ],
+    "source_label": "EMA Annex 11",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "safety-data-exchange-agreements-sdeas-contractual-pv-obligations",
+    "title": "Safety Data Exchange Agreements (SDEAs) — Contractual PV Obligations",
+    "section": "8. Operational and Contractual PV Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Operational",
+    "summary": "ICH E2D, GVP Module I, and 21 CFR 312.32(c)(1)(ii) mandate the existence and minimum content of SDEAs between co-MAHs, development partners, CROs, CMOs, and licensees. EMA Q&A on SDEAs (2011) defines binding minimum content. SDEAs are audited during PV inspections.",
+    "tags": [
+      "SDEA",
+      "PV agreements",
+      "CRO",
+      "CMO",
+      "Licensee",
+      "Inspection readiness"
+    ],
+    "source_label": "EMA SDEA Q&A (2011)",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "meddra-medical-dictionary-for-regulatory-activities",
+    "title": "MedDRA — Medical Dictionary for Regulatory Activities",
+    "section": "8. Operational and Contractual PV Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Operational",
+    "summary": "MSSO-maintained controlled medical terminology required for all ICSR submissions globally. Version controlled — new releases biannually. MAHs must use the current version per regulatory requirements.",
+    "tags": [
+      "MedDRA",
+      "MSSO",
+      "Coding",
+      "ICSR",
+      "PT",
+      "LLT",
+      "SOC",
+      "Version control"
+    ],
+    "source_label": "MedDRA MSSO · MedDRA Browser",
+    "as_of": "2026-09"
+  },
+  {
+    "id": "whodrug-who-drug-dictionary",
+    "title": "WHODrug — WHO Drug Dictionary",
+    "section": "8. Operational and Contractual PV Frameworks",
+    "subsection": "3.3 EU Reporting Systems",
+    "jurisdiction": "Operational",
+    "summary": "WHO-UMC maintained drug dictionary for medicinal product coding in ICSRs globally. WHODrug Global format is the standard for EudraVigilance submissions.",
+    "tags": [
+      "WHODrug",
+      "Drug coding",
+      "UMC",
+      "EudraVigilance",
+      "ICSR"
+    ],
+    "source_label": "WHODrug (UMC)",
+    "as_of": "2026-09"
+  }
+]

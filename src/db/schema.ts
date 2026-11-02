@@ -1,6 +1,5 @@
 import { sql } from "drizzle-orm";
 import {
-  date,
   integer,
   pgEnum,
   pgTable,
@@ -15,7 +14,8 @@ export const checkStatus = pgEnum("check_status", ["pending", "approved", "rejec
 /** Single-row table describing the regulatory corpus snapshot. */
 export const corpus = pgTable("corpus", {
   id: integer("id").primaryKey().default(1),
-  asOf: date("as_of").notNull(),
+  // YYYY-MM or YYYY-MM-DD, as given in data/regulations.json.
+  asOf: text("as_of").notNull(),
   note: text("note"),
 });
 
@@ -59,7 +59,8 @@ export const regulations = pgTable("regulations", {
   summary: text("summary").notNull(),
   tags: text("tags").array().notNull().default(sql`'{}'::text[]`),
   sourceLabel: text("source_label"),
-  asOf: date("as_of").notNull(),
+  // YYYY-MM or YYYY-MM-DD. Same-precision values sort correctly as text.
+  asOf: text("as_of").notNull(),
 });
 
 export const checkRegulations = pgTable(
