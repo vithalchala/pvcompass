@@ -1031,7 +1031,7 @@
     "section": "8. Operational and Contractual PV Frameworks",
     "subsection": "",
     "jurisdiction": "Operational",
-    "summary": "WHO-UMC maintained drug dictionary for medicinal product coding in ICSRs globally. WHODrug Global format is the standard for EudraVigilance submissions.",
+    "summary": "WHO-UMC maintained drug dictionary, widely used by MAHs for coding medicinal products in safety databases and clinical data (required in B3 format for FDA study data submissions). EudraVigilance product coding relies on the Article 57 / XEVMPD product dictionary, not WHODrug.",
     "tags": [
       "WHODrug",
       "Drug coding",
